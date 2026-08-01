@@ -1,0 +1,79 @@
+{
+  "tiers": [
+    {
+      "name": "Presenting Sponsor",
+      "sponsors": [
+        {
+          "name": "Add Presenting Sponsor",
+          "logo_label": "Presenting Sponsor Logo",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Platinum Sponsors",
+      "sponsors": [
+        {
+          "name": "Platinum Sponsor One",
+          "logo_label": "Platinum Sponsor Logo",
+          "image": ""
+        },
+        {
+          "name": "Platinum Sponsor Two",
+          "logo_label": "Platinum Sponsor Logo",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Gold Sponsors",
+      "sponsors": [
+        {
+          "name": "Gold Sponsor One",
+          "logo_label": "Gold Sponsor Logo",
+          "image": ""
+        },
+        {
+          "name": "Gold Sponsor Two",
+          "logo_label": "Gold Sponsor Logo",
+          "image": ""
+        },
+        {
+          "name": "Gold Sponsor Three",
+          "logo_label": "Gold Sponsor Logo",
+          "image": ""
+        },
+        {
+          "name": "Gold Sponsor Four",
+          "logo_label": "Gold Sponsor Logo",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Community Partners",
+      "sponsors": [
+        {
+          "name": "Community Partner One",
+          "logo_label": "Partner Logo",
+          "image": ""
+        },
+        {
+          "name": "Community Partner Two",
+          "logo_label": "Partner Logo",
+          "image": ""
+        },
+        {
+          "name": "Community Partner Three",
+          "logo_label": "Partner Logo",
+          "image": ""
+        },
+        {
+          "name": "Community Partner Four",
+          "logo_label": "Partner Logo",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

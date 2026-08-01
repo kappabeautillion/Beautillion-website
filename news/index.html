@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>News | Beautillion Leadership Academy</title>
+<meta name="description" content="Announcements, press, and stories from the Beautillion Leadership Academy." />
+<link rel="icon" href="/assets/img/crest.png" />
+<meta property="og:title" content="News | Beautillion Leadership Academy" />
+<meta property="og:description" content="Announcements, press, and stories from the Beautillion Leadership Academy." />
+<meta property="og:image" content="/assets/img/crest.png" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/">
+        <img src="/assets/img/crest.png" alt="Beautillion Leadership Academy crest" />
+        <span class="brand-text">
+          <span class="name">Beautillion Leadership Academy</span>
+          <span class="tag">Burlington Camden Achievement Foundation</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/" class="">Home</a></li>
+          <li><a href="/our-story/" class="">Our Story</a></li>
+          <li><a href="/program/" class="">Program</a></li>
+          <li><a href="/beaux/" class="">Beaux</a></li>
+          <li><a href="/alumni/" class="">Alumni</a></li>
+          <li><a href="/sponsors/" class="">Sponsors</a></li>
+          <li><a href="/news/" class="active">News</a></li>
+          <li><a href="/gallery/" class="">Gallery</a></li>
+        </ul>
+      </nav>
+      <a href="/apply/" class="btn btn-primary header-cta">Apply Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/our-story/">Our Story</a></li>
+      <li><a href="/program/">Program</a></li>
+      <li><a href="/beaux/">Beaux</a></li>
+      <li><a href="/alumni/">Alumni</a></li>
+      <li><a href="/sponsors/">Sponsors</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+    </ul>
+    <a href="/apply/" class="btn btn-primary">Apply Now</a>
+  </div>
+
+<main id="main">
+  <section class="hero hero--page">
+    <div class="hero-media"><div class="ph-photo"><span>News Hero Photo — Press Moment or Ceremony</span></div></div>
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="eyebrow">News &amp; Updates</span>
+        <h1 class="display">Stories From the Academy</h1>
+        <p class="lede">Announcements, milestones, and press from the Beautillion Leadership Academy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="news-featured" data-reveal></div>
+      <div class="news-list" id="news-list" data-reveal></div>
+    </div>
+  </section>
+
+  <script>
+  fetch('/content/news.json').then(function(r){return r.json();}).then(function(data){
+    var posts = (data.posts || []).slice().sort(function(a,b){ return new Date(b.date) - new Date(a.date); });
+    var featured = posts[0];
+    var rest = posts.slice(1);
+
+    var featuredEl = document.getElementById('news-featured');
+    if (featured && featuredEl) {
+      featuredEl.innerHTML = '<div class="news-featured" id="' + featured.slug + '">' +
+        Beautillion.mediaBlock(featured.image, featured.image_label, featured.title) +
+        '<div><span class="tag-pill">' + featured.category + '</span>' +
+        '<h2 class="display" style="margin-top:16px;">' + featured.title + '</h2>' +
+        '<p style="color:var(--gray-500); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em;">' + new Date(featured.date).toLocaleDateString(undefined, {year:'numeric', month:'long', day:'numeric'}) + '</p>' +
+        '<p>' + featured.body + '</p></div></div>';
+    }
+
+    Beautillion.renderList('#news-list', rest, function(p){
+      return '<div class="card" id="' + p.slug + '" data-reveal style="display:grid; grid-template-columns: 220px 1fr;">' +
+        '<div class="card-media">' + Beautillion.mediaBlock(p.image, p.image_label, p.title) + '</div>' +
+        '<div class="card-body"><span class="kicker">' + p.category + ' &middot; ' + new Date(p.date).toLocaleDateString() + '</span><h3>' + p.title + '</h3><p>' + p.excerpt + '</p></div></div>';
+    });
+  }).catch(function(){});
+  </script>
+
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="/assets/img/crest.png" alt="Beautillion Leadership Academy crest" />
+            <span class="name">Beautillion<br />Leadership Academy</span>
+          </div>
+          <p>A premier leadership development program cultivating scholarship, character, and service in young men, sponsored by the Burlington Camden Achievement Foundation.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/our-story/">Our Story</a></li>
+            <li><a href="/program/">The Program</a></li>
+            <li><a href="/beaux/">Meet the Beaux</a></li>
+            <li><a href="/alumni/">Alumni</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>More</h5>
+          <ul>
+            <li><a href="/sponsors/">Sponsors &amp; Partners</a></li>
+            <li><a href="/news/">News &amp; Updates</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/apply/">Apply</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Stay Informed</h5>
+          <form class="footer-newsletter" action="#" onsubmit="return false;">
+            <input type="email" placeholder="Your email address" aria-label="Email address" required />
+            <button type="submit" class="btn btn-outline-light" style="width:100%; justify-content:center;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Beautillion Leadership Academy. All rights reserved.</span>
+        <span>Site by your committee, built with Claude.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+# Decap CMS configuration for the Beautillion Leadership Academy website.
+#
+# IMPORTANT — before this works, you must:
+#   1. Replace `repo:` below with your actual GitHub "username/repo-name".
+#   2. Replace `base_url:` with your live site URL (custom domain once connected,
+#      or the vercel.app URL in the meantime).
+#   3. Follow the "Setting up committee editing (Decap CMS)" section of README.md
+#      to create a GitHub OAuth App and add its credentials to Vercel.
+#
+# Everything below this point should NOT need to change for day-to-day editing.
+
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/beautillion-website
+  branch: main
+  base_url: https://www.kappabeautillion.com
+  auth_endpoint: api/auth
+
+media_folder: "content/uploads"
+public_folder: "/content/uploads"
+
+collections:
+  - name: "home"
+    label: "Home Page"
+    files:
+      - file: "content/home.json"
+        label: "Home Page Content"
+        name: "home"
+        fields:
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Small Text Above Headline", name: "eyebrow", widget: "string" }
+              - { label: "Main Headline", name: "headline", widget: "string" }
+              - { label: "Supporting Sentence", name: "sub", widget: "text" }
+          - label: "Mission Section"
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Small Text Above Headline", name: "eyebrow", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Paragraph", name: "body", widget: "text" }
+
+  - name: "news"
+    label: "News Posts"
+    files:
+      - file: "content/news.json"
+        label: "News Posts"
+        name: "news"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Headline", name: "title", widget: "string" }
+              - { label: "URL Slug (no spaces, e.g. spring-gala-recap)", name: "slug", widget: "string" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "Category (e.g. Announcement, Impact, Service)", name: "category", widget: "string" }
+              - { label: "Short Summary (shown in previews)", name: "excerpt", widget: "text" }
+              - { label: "Full Story", name: "body", widget: "text" }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+              - { label: "Photo Description (shown until a photo is uploaded)", name: "image_label", widget: "string" }
+
+  - name: "alumni"
+    label: "Alumni Page"
+    files:
+      - file: "content/alumni.json"
+        label: "Alumni Page"
+        name: "alumni"
+        fields:
+          - label: "Featured Quote (shown on Home + Alumni page)"
+            name: "featured_quote"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name / Class Year", name: "name", widget: "string" }
+              - { label: "Detail (e.g. current job)", name: "meta", widget: "string" }
+          - label: "Alumni Profiles"
+            name: "alumni"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Class Year", name: "class_year", widget: "string" }
+              - { label: "Current Role", name: "current", widget: "string" }
+              - { label: "Their Story (a sentence or two)", name: "story", widget: "text" }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+              - { label: "Photo Description (shown until a photo is uploaded)", name: "photo_label", widget: "string" }
+
+  - name: "beaux"
+    label: "Beaux Roster"
+    files:
+      - file: "content/beaux.json"
+        label: "Beaux Page"
+        name: "beaux"
+        fields:
+          - { label: "Class Year", name: "class_year", widget: "string" }
+          - label: "This Year's Beaux"
+            name: "beaux"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "School / Grade", name: "school", widget: "string" }
+              - { label: "Sponsor Credit", name: "sponsor", widget: "string" }
+              - { label: "Headshot", name: "image", widget: "image", required: false }
+              - { label: "Photo Description (shown until a headshot is uploaded)", name: "photo_label", widget: "string" }
+
+  - name: "sponsors"
+    label: "Sponsors Page"
+    files:
+      - file: "content/sponsors.json"
+        label: "Sponsors Page"
+        name: "sponsors"
+        fields:
+          - label: "Sponsor Tiers"
+            name: "tiers"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Tier Name (e.g. Platinum Sponsors)", name: "name", widget: "string" }
+              - label: "Sponsors in This Tier"
+                name: "sponsors"
+                widget: "list"
+                summary: "{{name}}"
+                fields:
+                  - { label: "Sponsor Name", name: "name", widget: "string" }
+                  - { label: "Logo", name: "image", widget: "image", required: false }
+                  - { label: "Text Shown Until a Logo Is Uploaded", name: "logo_label", widget: "string" }
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - file: "content/gallery.json"
+        label: "Gallery Photos"
+        name: "gallery"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            summary: "{{caption}}"
+            fields:
+              - { label: "Caption", name: "caption", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["ceremony", "program", "service", "sponsors"]
+              - { label: "Photo", name: "image", widget: "image", required: false }
+              - { label: "Text Shown Until a Photo Is Uploaded", name: "label", widget: "string" }

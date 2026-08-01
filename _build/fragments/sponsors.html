@@ -1,0 +1,51 @@
+  <section class="hero hero--page">
+    <div class="hero-media"><div class="ph-photo"><span>Sponsors Hero Photo — Presentation Ceremony or Check Presentation</span></div></div>
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="eyebrow">With Gratitude</span>
+        <h1 class="display">Sponsors &amp; Partners</h1>
+        <p class="lede">None of this is possible without the generosity of the individuals, families, and organizations who invest in our Beaux.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" id="sponsor-tiers" data-reveal></div>
+  </section>
+
+  <section class="section section--champagne">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow">Become a Sponsor</span>
+        <h2 class="display">Sponsorship Levels</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="pillar" data-reveal><span class="index">Presenting</span><h3>$10,000+</h3><p>Top billing across all materials, speaking opportunity at the ceremony, and a dedicated scholarship named in your honor.</p></div>
+        <div class="pillar" data-reveal><span class="index">Platinum</span><h3>$5,000+</h3><p>Prominent logo placement, VIP seating for four at the ceremony, and recognition across the website and program booklet.</p></div>
+        <div class="pillar" data-reveal><span class="index">Gold</span><h3>$2,500+</h3><p>Logo placement on the website and program booklet, plus two tickets to the ceremony.</p></div>
+        <div class="pillar" data-reveal><span class="index">Partner</span><h3>$500+</h3><p>Name recognition on the website and program booklet as a Community Partner.</p></div>
+      </div>
+      <p style="text-align:center; color:var(--gray-500); font-size:0.85rem; margin-top:24px;">Committee note: adjust these giving levels and benefits to match your chapter's actual sponsorship packet.</p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container" data-reveal>
+      <span class="eyebrow" style="justify-content:center;">Partner With Us</span>
+      <h2 class="display">Invest in the Next Generation of Leaders</h2>
+      <div class="btn-row">
+        <a href="mailto:info@kappabeautillion.com" class="btn btn-primary">Become a Sponsor</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  fetch('/content/sponsors.json').then(function(r){return r.json();}).then(function(data){
+    var container = document.getElementById('sponsor-tiers');
+    if (!container) return;
+    container.innerHTML = (data.tiers || []).map(function(tier){
+      var logos = (tier.sponsors || []).map(function(s){ return s.image ? ('<div class="sponsor-logo"><img src="' + s.image + '" alt="' + s.name + '" style="max-width:100%; max-height:60px;" /></div>') : ('<div class="sponsor-logo">' + s.name + '</div>'); }).join('');
+      return '<div class="sponsor-tier" data-reveal><h3>' + tier.name + '</h3><div class="sponsor-grid">' + logos + '</div></div>';
+    }).join('');
+  }).catch(function(){});
+  </script>

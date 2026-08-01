@@ -1,0 +1,40 @@
+  <section class="hero hero--page">
+    <div class="hero-media"><div class="ph-photo"><span>Gallery Hero Photo — Collage Moment</span></div></div>
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="eyebrow">Gallery</span>
+        <h1 class="display">Moments From the Academy</h1>
+        <p class="lede">A look back at ceremonies, workshops, and service days throughout the year.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-filters" data-reveal>
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="ceremony">Ceremony</button>
+        <button data-filter="program">Program</button>
+        <button data-filter="service">Service</button>
+        <button data-filter="sponsors">Sponsors</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <div class="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <div class="ph-photo"><span>Photo</span></div>
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script>
+  fetch('/content/gallery.json').then(function(r){return r.json();}).then(function(data){
+    Beautillion.renderList('#gallery-grid', data.photos || [], function(p){
+      return '<div class="gallery-item" data-category="' + p.category + '" data-lightbox data-caption="' + p.caption + '">' +
+        Beautillion.mediaBlock(p.image, p.label, p.caption) + '</div>';
+    });
+  }).catch(function(){});
+  </script>

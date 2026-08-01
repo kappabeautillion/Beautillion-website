@@ -1,0 +1,58 @@
+{
+  "photos": [
+    {
+      "caption": "2025 Presentation Ceremony",
+      "category": "ceremony",
+      "label": "Ceremony Photo",
+      "image": ""
+    },
+    {
+      "caption": "Orientation Weekend",
+      "category": "program",
+      "label": "Orientation Photo",
+      "image": ""
+    },
+    {
+      "caption": "Community Service Day",
+      "category": "service",
+      "label": "Service Day Photo",
+      "image": ""
+    },
+    {
+      "caption": "Etiquette Dinner",
+      "category": "program",
+      "label": "Etiquette Dinner Photo",
+      "image": ""
+    },
+    {
+      "caption": "Sponsor Appreciation Reception",
+      "category": "sponsors",
+      "label": "Sponsor Reception Photo",
+      "image": ""
+    },
+    {
+      "caption": "Rehearsal Night",
+      "category": "ceremony",
+      "label": "Rehearsal Photo",
+      "image": ""
+    },
+    {
+      "caption": "Financial Literacy Workshop",
+      "category": "program",
+      "label": "Workshop Photo",
+      "image": ""
+    },
+    {
+      "caption": "Class Group Portrait",
+      "category": "ceremony",
+      "label": "Group Portrait",
+      "image": ""
+    },
+    {
+      "caption": "Neighborhood Cleanup",
+      "category": "service",
+      "label": "Cleanup Photo",
+      "image": ""
+    }
+  ]
+}

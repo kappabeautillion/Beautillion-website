@@ -1,0 +1,41 @@
+{
+  "featured_quote": {
+    "quote": "The Academy taught me how to walk into a room with confidence long before I ever had a resume to back it up.",
+    "name": "Class of 2014",
+    "meta": "Now a Civil Engineer"
+  },
+  "alumni": [
+    {
+      "name": "Marcus Bell",
+      "class_year": "2012",
+      "current": "Attorney, Bell & Ford LLP",
+      "story": "Marcus credits the Academy's public speaking workshops with giving him the confidence to pursue law school.",
+      "photo_label": "Marcus Bell Portrait",
+      "image": ""
+    },
+    {
+      "name": "Andre Simmons",
+      "class_year": "2015",
+      "current": "M.D., Pediatric Resident",
+      "story": "Andre returned as a mentor for two consecutive classes after finishing medical school.",
+      "photo_label": "Andre Simmons Portrait",
+      "image": ""
+    },
+    {
+      "name": "Jalen Whitfield",
+      "class_year": "2017",
+      "current": "Software Engineer, Atlanta",
+      "story": "Jalen's Beautillion service project evolved into a nonprofit coding camp for middle schoolers.",
+      "photo_label": "Jalen Whitfield Portrait",
+      "image": ""
+    },
+    {
+      "name": "Terrence Boyd",
+      "class_year": "2011",
+      "current": "Business Owner",
+      "story": "Terrence now sponsors two Beaux scholarships each year through his family's foundation.",
+      "photo_label": "Terrence Boyd Portrait",
+      "image": ""
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "eyebrow": "Burlington Camden Achievement Foundation Presents",
+    "headline": "Developing Leaders. Building Legacy. Inspiring Excellence.",
+    "sub": "The Beautillion Leadership Academy equips exceptional young men with the confidence, leadership skills, scholarship, and character to become tomorrow's leaders."
+  },
+  "mission": {
+    "eyebrow": "More Than a Gala",
+    "headline": "A Journey, Not a Single Evening",
+    "body": "The Beautillion is often recognized for its elegant black-tie celebration, but the gala is only the culmination of a much larger journey. Throughout the year, participants engage in leadership development, college preparation, financial literacy, professional etiquette, mentorship, community service, and personal growth. Our mission is simple: to prepare extraordinary young men for extraordinary lives."
+  },
+  "stats": [
+    {
+      "num": 40,
+      "suffix": "+",
+      "label": "Years of Excellence"
+    },
+    {
+      "num": 250000,
+      "prefix": "$",
+      "suffix": "+",
+      "label": "Scholarships Awarded"
+    },
+    {
+      "num": 500,
+      "suffix": "+",
+      "label": "Young Men Served"
+    },
+    {
+      "num": 22,
+      "suffix": "",
+      "label": "College Acceptances This Year"
+    }
+  ]
+}

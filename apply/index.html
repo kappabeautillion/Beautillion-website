@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apply | Beautillion Leadership Academy</title>
+<meta name="description" content="Begin your application to join the Beautillion Leadership Academy." />
+<link rel="icon" href="/assets/img/crest.png" />
+<meta property="og:title" content="Apply | Beautillion Leadership Academy" />
+<meta property="og:description" content="Begin your application to join the Beautillion Leadership Academy." />
+<meta property="og:image" content="/assets/img/crest.png" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/">
+        <img src="/assets/img/crest.png" alt="Beautillion Leadership Academy crest" />
+        <span class="brand-text">
+          <span class="name">Beautillion Leadership Academy</span>
+          <span class="tag">Burlington Camden Achievement Foundation</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/" class="">Home</a></li>
+          <li><a href="/our-story/" class="">Our Story</a></li>
+          <li><a href="/program/" class="">Program</a></li>
+          <li><a href="/beaux/" class="">Beaux</a></li>
+          <li><a href="/alumni/" class="">Alumni</a></li>
+          <li><a href="/sponsors/" class="">Sponsors</a></li>
+          <li><a href="/news/" class="">News</a></li>
+          <li><a href="/gallery/" class="">Gallery</a></li>
+        </ul>
+      </nav>
+      <a href="/apply/" class="btn btn-primary header-cta">Apply Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/our-story/">Our Story</a></li>
+      <li><a href="/program/">Program</a></li>
+      <li><a href="/beaux/">Beaux</a></li>
+      <li><a href="/alumni/">Alumni</a></li>
+      <li><a href="/sponsors/">Sponsors</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+    </ul>
+    <a href="/apply/" class="btn btn-primary">Apply Now</a>
+  </div>
+
+<main id="main">
+  <section class="hero hero--page">
+    <div class="hero-media"><div class="ph-photo"><span>Apply Hero Photo — Beau Signing or Handshake Moment</span></div></div>
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="eyebrow">Applications Open</span>
+        <h1 class="display">Begin Your Application</h1>
+        <p class="lede">Spaces in each Beautillion class are limited. Applications are reviewed on a rolling basis, so we encourage you to apply early.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:start; gap:56px;">
+        <div data-reveal>
+          <span class="eyebrow">Eligibility</span>
+          <h2 class="display" style="font-size:1.8rem;">Who Should Apply</h2>
+          <ul class="checklist">
+            <li>Young men currently enrolled in high school (grades to be specified by your chapter)</li>
+            <li>A minimum GPA as set by the committee</li>
+            <li>Willingness to commit to the full program calendar</li>
+            <li>Interest in leadership, service, and personal growth</li>
+          </ul>
+
+          <span class="eyebrow" style="margin-top:40px;">The Process</span>
+          <div class="steps" style="margin-top:20px;">
+            <div class="step"><h3>Submit Application</h3><p>Complete the form with your information and a short essay response.</p></div>
+            <div class="step"><h3>Committee Review</h3><p>Our committee reviews every application and reaches out to schedule an interview.</p></div>
+            <div class="step"><h3>Interview</h3><p>A brief conversation with the committee to learn more about you and your goals.</p></div>
+            <div class="step"><h3>Welcome to the Academy</h3><p>Accepted Beaux and their families are invited to orientation to begin the program.</p></div>
+          </div>
+        </div>
+
+        <div data-reveal>
+          <div class="form-card">
+            <h3 style="margin-bottom:6px;">Application Form</h3>
+            <p style="font-size:0.9rem; margin-bottom:24px;">All fields marked * are required.</p>
+            <form id="apply-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-row cols-2">
+                <div class="field"><label for="f-name">Full Name *</label><input id="f-name" name="name" type="text" required /></div>
+                <div class="field"><label for="f-dob">Date of Birth *</label><input id="f-dob" name="dob" type="date" required /></div>
+              </div>
+              <div class="form-row cols-2">
+                <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required /></div>
+                <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" /></div>
+              </div>
+              <div class="form-row cols-2">
+                <div class="field"><label for="f-school">Current School *</label><input id="f-school" name="school" type="text" required /></div>
+                <div class="field"><label for="f-grade">Grade Level *</label>
+                  <select id="f-grade" name="grade" required>
+                    <option value="">Select one</option>
+                    <option>9th Grade</option>
+                    <option>10th Grade</option>
+                    <option>11th Grade</option>
+                    <option>12th Grade</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row cols-2">
+                <div class="field"><label for="f-parent">Parent/Guardian Name *</label><input id="f-parent" name="parent_name" type="text" required /></div>
+                <div class="field"><label for="f-parent-email">Parent/Guardian Email *</label><input id="f-parent-email" name="parent_email" type="email" required /></div>
+              </div>
+              <div class="form-row">
+                <div class="field"><label for="f-essay">Why do you want to join the Beautillion Leadership Academy? *</label><textarea id="f-essay" name="essay" required></textarea></div>
+              </div>
+              <div class="form-row">
+                <div class="field"><label for="f-heard">How did you hear about us?</label><input id="f-heard" name="heard_about" type="text" /></div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Submit Application</button>
+              <p class="form-note" id="apply-form-note">Your information is only used to evaluate your application and will not be shared.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--black">
+    <div class="container text-center" data-reveal>
+      <span class="eyebrow" style="justify-content:center;">Questions?</span>
+      <h2 class="display" style="font-size:1.8rem;">We're Happy to Help</h2>
+      <p style="color:var(--gray-300);">Reach out to the committee directly at <a href="mailto:info@kappabeautillion.com" style="color:var(--cream); border-bottom:1px solid var(--cream);">info@kappabeautillion.com</a></p>
+    </div>
+  </section>
+
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="/assets/img/crest.png" alt="Beautillion Leadership Academy crest" />
+            <span class="name">Beautillion<br />Leadership Academy</span>
+          </div>
+          <p>A premier leadership development program cultivating scholarship, character, and service in young men, sponsored by the Burlington Camden Achievement Foundation.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/our-story/">Our Story</a></li>
+            <li><a href="/program/">The Program</a></li>
+            <li><a href="/beaux/">Meet the Beaux</a></li>
+            <li><a href="/alumni/">Alumni</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>More</h5>
+          <ul>
+            <li><a href="/sponsors/">Sponsors &amp; Partners</a></li>
+            <li><a href="/news/">News &amp; Updates</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/apply/">Apply</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Stay Informed</h5>
+          <form class="footer-newsletter" action="#" onsubmit="return false;">
+            <input type="email" placeholder="Your email address" aria-label="Email address" required />
+            <button type="submit" class="btn btn-outline-light" style="width:100%; justify-content:center;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Beautillion Leadership Academy. All rights reserved.</span>
+        <span>Site by your committee, built with Claude.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>

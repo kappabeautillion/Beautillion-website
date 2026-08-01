@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alumni | Beautillion Leadership Academy</title>
+<meta name="description" content="Where they are now — the Academy's alumni network and the leaders it has produced." />
+<link rel="icon" href="/assets/img/crest.png" />
+<meta property="og:title" content="Alumni | Beautillion Leadership Academy" />
+<meta property="og:description" content="Where they are now — the Academy's alumni network and the leaders it has produced." />
+<meta property="og:image" content="/assets/img/crest.png" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/">
+        <img src="/assets/img/crest.png" alt="Beautillion Leadership Academy crest" />
+        <span class="brand-text">
+          <span class="name">Beautillion Leadership Academy</span>
+          <span class="tag">Burlington Camden Achievement Foundation</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/" class="">Home</a></li>
+          <li><a href="/our-story/" class="">Our Story</a></li>
+          <li><a href="/program/" class="">Program</a></li>
+          <li><a href="/beaux/" class="">Beaux</a></li>
+          <li><a href="/alumni/" class="active">Alumni</a></li>
+          <li><a href="/sponsors/" class="">Sponsors</a></li>
+          <li><a href="/news/" class="">News</a></li>
+          <li><a href="/gallery/" class="">Gallery</a></li>
+        </ul>
+      </nav>
+      <a href="/apply/" class="btn btn-primary header-cta">Apply Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/our-story/">Our Story</a></li>
+      <li><a href="/program/">Program</a></li>
+      <li><a href="/beaux/">Beaux</a></li>
+      <li><a href="/alumni/">Alumni</a></li>
+      <li><a href="/sponsors/">Sponsors</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+    </ul>
+    <a href="/apply/" class="btn btn-primary">Apply Now</a>
+  </div>
+
+<main id="main">
+  <section class="hero hero--page">
+    <div class="hero-media"><div class="ph-photo"><span>Alumni Hero Photo — Alumni Reunion or Group Shot</span></div></div>
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="eyebrow">Alumni</span>
+        <h1 class="display">Where They Are Now</h1>
+        <p class="lede">Hundreds of young men have passed through the Academy. Here's a look at the leaders they've become.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--black">
+    <div class="container">
+      <div class="stat-strip" data-reveal>
+        <div class="stat"><span class="num" data-count="500" data-suffix="+">0</span><span class="label">Alumni Nationwide</span></div>
+        <div class="stat"><span class="num" data-count="95" data-suffix="%">0</span><span class="label">Pursued Higher Education</span></div>
+        <div class="stat"><span class="num" data-count="30" data-suffix="+">0</span><span class="label">Return as Mentors Yearly</span></div>
+        <div class="stat"><span class="num" data-count="15" data-suffix="+">0</span><span class="label">Classes Graduated</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow">Success Stories</span>
+        <h2 class="display">Alumni Spotlights</h2>
+      </div>
+      <div class="grid grid-4" id="alumni-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <section class="section section--champagne">
+    <div class="container">
+      <div class="quote-block" data-reveal style="margin:0 auto; text-align:center;">
+        <span class="mark" style="margin:0 auto 18px;">&ldquo;</span>
+        <blockquote id="alumni-featured-quote">The Academy taught me how to walk into a room with confidence long before I ever had a resume to back it up.</blockquote>
+        <p class="attribution" id="alumni-featured-attribution">Class of 2014 &middot; Now a Civil Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container" data-reveal>
+      <span class="eyebrow" style="justify-content:center;">Stay Connected</span>
+      <h2 class="display">Are You an Academy Alum?</h2>
+      <p style="color:var(--gray-300); max-width:520px; margin:0 auto;">We'd love to feature your story and welcome you back as a mentor for the next class.</p>
+      <div class="btn-row">
+        <a href="/apply/" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  fetch('/content/alumni.json').then(function(r){return r.json();}).then(function(data){
+    Beautillion.renderList('#alumni-grid', data.alumni || [], function(a){
+      return '<div class="card alumni-card" data-reveal>' +
+        '<div class="card-media">' + Beautillion.mediaBlock(a.image, a.photo_label, a.name) + '</div>' +
+        '<div class="card-body"><span class="alumni-meta">Class of ' + a.class_year + '</span><h3>' + a.name + '</h3><p style="font-size:0.85rem; color:var(--gray-500);">' + a.current + '</p><p style="font-size:0.9rem; margin-top:8px;">' + a.story + '</p></div></div>';
+    });
+    if (data.featured_quote) {
+      var q = document.getElementById('alumni-featured-quote');
+      var at = document.getElementById('alumni-featured-attribution');
+      if (q) q.textContent = data.featured_quote.quote;
+      if (at) at.textContent = data.featured_quote.name + ' · ' + data.featured_quote.meta;
+    }
+  }).catch(function(){});
+  </script>
+
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="/assets/img/crest.png" alt="Beautillion Leadership Academy crest" />
+            <span class="name">Beautillion<br />Leadership Academy</span>
+          </div>
+          <p>A premier leadership development program cultivating scholarship, character, and service in young men, sponsored by the Burlington Camden Achievement Foundation.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/our-story/">Our Story</a></li>
+            <li><a href="/program/">The Program</a></li>
+            <li><a href="/beaux/">Meet the Beaux</a></li>
+            <li><a href="/alumni/">Alumni</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>More</h5>
+          <ul>
+            <li><a href="/sponsors/">Sponsors &amp; Partners</a></li>
+            <li><a href="/news/">News &amp; Updates</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/apply/">Apply</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Stay Informed</h5>
+          <form class="footer-newsletter" action="#" onsubmit="return false;">
+            <input type="email" placeholder="Your email address" aria-label="Email address" required />
+            <button type="submit" class="btn btn-outline-light" style="width:100%; justify-content:center;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Beautillion Leadership Academy. All rights reserved.</span>
+        <span>Site by your committee, built with Claude.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>

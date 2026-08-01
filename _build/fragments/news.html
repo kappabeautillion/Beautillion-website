@@ -1,0 +1,41 @@
+  <section class="hero hero--page">
+    <div class="hero-media"><div class="ph-photo"><span>News Hero Photo — Press Moment or Ceremony</span></div></div>
+    <div class="container">
+      <div class="hero-content" data-reveal>
+        <span class="eyebrow">News &amp; Updates</span>
+        <h1 class="display">Stories From the Academy</h1>
+        <p class="lede">Announcements, milestones, and press from the Beautillion Leadership Academy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="news-featured" data-reveal></div>
+      <div class="news-list" id="news-list" data-reveal></div>
+    </div>
+  </section>
+
+  <script>
+  fetch('/content/news.json').then(function(r){return r.json();}).then(function(data){
+    var posts = (data.posts || []).slice().sort(function(a,b){ return new Date(b.date) - new Date(a.date); });
+    var featured = posts[0];
+    var rest = posts.slice(1);
+
+    var featuredEl = document.getElementById('news-featured');
+    if (featured && featuredEl) {
+      featuredEl.innerHTML = '<div class="news-featured" id="' + featured.slug + '">' +
+        Beautillion.mediaBlock(featured.image, featured.image_label, featured.title) +
+        '<div><span class="tag-pill">' + featured.category + '</span>' +
+        '<h2 class="display" style="margin-top:16px;">' + featured.title + '</h2>' +
+        '<p style="color:var(--gray-500); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em;">' + new Date(featured.date).toLocaleDateString(undefined, {year:'numeric', month:'long', day:'numeric'}) + '</p>' +
+        '<p>' + featured.body + '</p></div></div>';
+    }
+
+    Beautillion.renderList('#news-list', rest, function(p){
+      return '<div class="card" id="' + p.slug + '" data-reveal style="display:grid; grid-template-columns: 220px 1fr;">' +
+        '<div class="card-media">' + Beautillion.mediaBlock(p.image, p.image_label, p.title) + '</div>' +
+        '<div class="card-body"><span class="kicker">' + p.category + ' &middot; ' + new Date(p.date).toLocaleDateString() + '</span><h3>' + p.title + '</h3><p>' + p.excerpt + '</p></div></div>';
+    });
+  }).catch(function(){});
+  </script>
