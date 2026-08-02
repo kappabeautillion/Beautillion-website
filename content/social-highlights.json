@@ -1,0 +1,58 @@
+{
+  "highlights": [
+    {
+      "featured": true,
+      "platform": "instagram",
+      "caption": "Presentation night — the Class of 2027 crosses the stage for the first time as Beaux of the Academy.",
+      "date": "2027-06-12",
+      "link": "https://www.instagram.com/beautillionleadershipacademy/",
+      "image": "",
+      "alt": "Beaux of the Class of 2027 standing together on stage at Presentation Night"
+    },
+    {
+      "featured": false,
+      "platform": "instagram",
+      "caption": "Saturday session: a masterclass on public speaking and presence, led by one of our alumni mentors.",
+      "date": "2027-04-03",
+      "link": "https://www.instagram.com/beautillionleadershipacademy/",
+      "image": "",
+      "alt": "Academy participants practicing public speaking during a Saturday session"
+    },
+    {
+      "featured": false,
+      "platform": "facebook",
+      "caption": "Every Beau logs at least 40 hours of community service before Presentation Night. Here's this year's class at a local food bank.",
+      "date": "2027-03-15",
+      "link": "https://www.facebook.com/beautillionleadershipacademy",
+      "image": "",
+      "alt": "Academy participants volunteering at a community food bank"
+    },
+    {
+      "featured": false,
+      "platform": "tiktok",
+      "caption": "60 seconds inside a Leadership Module: etiquette, eye contact, and the handshake that opens doors.",
+      "date": "2027-02-20",
+      "link": "https://www.tiktok.com/@beautillionleadershipacademy",
+      "image": "",
+      "alt": "Short video clip from a Leadership Module session"
+    },
+    {
+      "featured": false,
+      "platform": "instagram",
+      "caption": "Fathers and sons, mentors and mentees — the relationships built here outlast any single Academy year.",
+      "date": "2027-01-18",
+      "link": "https://www.instagram.com/beautillionleadershipacademy/",
+      "image": "",
+      "alt": "A father and son embracing at an Academy event"
+    },
+    {
+      "featured": false,
+      "platform": "facebook",
+      "caption": "Congratulations to our newest college acceptances — the Academy's work continues well past graduation.",
+      "date": "2026-12-05",
+      "link": "https://www.facebook.com/beautillionleadershipacademy",
+      "image": "",
+      "alt": "Academy alumni celebrating college acceptance letters"
+    }
+  ]
+}

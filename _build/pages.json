@@ -29,13 +29,6 @@
     "out": "experience/index.html"
   },
   {
-    "title": "Meet the Beaux | Beautillion Leadership Academy",
-    "description": "Meet this year's class of Beaux \u2014 the young men representing the current cohort of the Beautillion Leadership Academy.",
-    "fragment": "beaux.html",
-    "active": "BEAUX",
-    "out": "beaux/index.html"
-  },
-  {
     "title": "Alumni | Beautillion Leadership Academy",
     "description": "Where they are now \u2014 the Academy's alumni network and the leaders it has produced.",
     "fragment": "alumni.html",

@@ -18,6 +18,7 @@
   --gold: #b08d3e;
   --gold-soft: #d4bd82;
   --crest-crimson: #9c140e;
+  --ember: #c1541d;
   --gray-700: #4a4642;
   --gray-500: #7a746c;
   --gray-300: #d8d2c8;
@@ -712,3 +713,178 @@ h1.display { font-size: clamp(2.6rem, 6vw, 5rem); }
 .outcome-item .value-icon { border-color: var(--gold); }
 .outcome-item h3 { font-size: 1rem; margin: 6px 0 6px; }
 .outcome-item p { font-size: 0.85rem; }
+
+
+/* =========================================================
+   BEAUX LEGACY ARCHIVE COMPONENTS
+   ========================================================= */
+
+.legacy-grid { display: grid; gap: 28px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .legacy-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .legacy-grid { grid-template-columns: repeat(3, 1fr); } }
+.legacy-card { background: var(--white); border: 1px solid var(--gray-100); overflow: hidden; transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); display: flex; flex-direction: column; }
+.legacy-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(10,10,10,0.12); }
+.legacy-card .lc-media .ph-photo { aspect-ratio: 4/3; }
+.legacy-card .lc-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.legacy-card .lc-year { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--burgundy); line-height: 1; }
+.legacy-card .lc-theme { font-size: 1.05rem; font-weight: 700; margin: 6px 0 10px; }
+.legacy-card .lc-quote { font-style: italic; color: var(--gray-500); font-size: 0.88rem; margin-bottom: 16px; }
+.legacy-card .lc-meta { display: flex; gap: 18px; font-size: 0.75rem; color: var(--gray-500); margin-bottom: 18px; flex-wrap: wrap; }
+.legacy-card .lc-meta strong { color: var(--ink); display: block; font-family: var(--font-display); font-size: 1.05rem; }
+.legacy-card .lc-cta { margin-top: auto; }
+
+/* Class hero — per-class visual identity via CSS variable */
+.class-hero .eyebrow { color: var(--theme-accent, var(--gold-soft)); }
+.class-hero .eyebrow::before { background: var(--theme-accent, var(--gold-soft)); }
+.class-hero .btn-primary { background: var(--theme-accent, var(--burgundy)); }
+
+/* Theme essay */
+.theme-essay { max-width: 720px; margin: 0 auto; text-align: center; }
+.theme-essay p { font-size: 1.08rem; }
+
+/* Honors grid */
+.honors-grid { display: grid; gap: 32px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 860px) { .honors-grid { grid-template-columns: repeat(3, 1fr); } }
+.honor-card { text-align: center; }
+.honor-card .ph-photo { aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin: 0 auto 16px; max-width: 160px; }
+.honor-card .honor-title { font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+.honor-card .honor-name { font-family: var(--font-display); font-size: 1.2rem; color: var(--burgundy); margin-bottom: 8px; }
+.honor-card .honor-desc { font-size: 0.85rem; color: var(--gray-500); }
+
+/* Participant directory */
+.directory-search { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+.directory-search input[type="search"] {
+  flex: 1; min-width: 220px; padding: 13px 16px; border: 1px solid var(--gray-300);
+  background: var(--ivory); font-size: 0.9rem;
+}
+.directory-search input[type="search"]:focus { outline: none; border-color: var(--burgundy); background: var(--white); }
+.participant-card { position: relative; overflow: hidden; }
+.participant-card .card-media { aspect-ratio: 3/4; }
+.participant-card .pc-hover {
+  position: absolute; inset: 0; background: rgba(10,10,10,0.9); color: var(--white);
+  padding: 20px; display: flex; flex-direction: column; justify-content: center;
+  opacity: 0; transition: opacity 0.35s var(--ease);
+}
+.participant-card:hover .pc-hover, .participant-card:focus-within .pc-hover { opacity: 1; }
+.participant-card .pc-hover h4 { color: var(--white); font-size: 1.05rem; margin-bottom: 8px; }
+.participant-card .pc-hover p { font-size: 0.78rem; color: var(--gray-300); margin: 0 0 6px; }
+
+/* Masonry-style gallery */
+.masonry-gallery { columns: 2; column-gap: 14px; }
+@media (min-width: 720px) { .masonry-gallery { columns: 3; } }
+.masonry-gallery .m-item { break-inside: avoid; margin-bottom: 14px; cursor: pointer; }
+.masonry-gallery .m-item .ph-photo { min-height: 200px; }
+
+/* Profile page */
+.profile-hero { display: grid; gap: 40px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 860px) { .profile-hero { grid-template-columns: 320px 1fr; } }
+.profile-hero .ph-photo { aspect-ratio: 3/4; }
+.profile-meta-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+.profile-meta-list div span { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-500); margin-bottom: 4px; }
+.profile-meta-list div strong { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; }
+
+/* =========================================================
+   SOCIAL MEDIA COMPONENT
+   Icon-only nav group, footer "Connect With Us," homepage
+   "Follow the Journey" curated grid, mobile dismissible
+   callout card, and content-page share buttons.
+   ========================================================= */
+
+/* Shared icon sizing */
+.social-icon-svg { width: 18px; height: 18px; display: block; flex-shrink: 0; }
+
+/* ---- Header / mobile-nav icon group ---- */
+.social-icons { display: flex; align-items: center; gap: 20px; }
+.social-icons a {
+  color: rgba(255,255,255,0.65);
+  display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.18); border-radius: 50%;
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+.social-icons a:hover, .social-icons a:focus-visible { color: var(--black); background: var(--champagne); border-color: var(--champagne); }
+.social-icons a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.mobile-nav .social-icons { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+/* ---- Footer "Connect With Us" ---- */
+.footer-social { margin-top: 22px; }
+.footer-social h6 {
+  color: var(--white); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+  margin-bottom: 8px; font-family: var(--font-body); font-weight: 700;
+}
+.footer-social p { font-size: 0.82rem; color: var(--gray-300); margin-bottom: 14px; max-width: 320px; }
+.footer-social .social-links { display: flex; flex-direction: column; gap: 11px; }
+.footer-social .social-links a {
+  display: inline-flex; align-items: center; gap: 10px; width: fit-content;
+  font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gray-300);
+  transition: color 0.2s var(--ease);
+}
+.footer-social .social-links a .social-icon-svg { color: var(--gold-soft); }
+.footer-social .social-links a:hover, .footer-social .social-links a:focus-visible { color: var(--champagne); }
+.footer-social .social-links a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 3px; }
+
+/* ---- Homepage: Follow the Journey ---- */
+.follow-journey .section-head p { max-width: 560px; margin-left: auto; margin-right: auto; }
+.social-highlights {
+  display: flex; gap: 16px; overflow-x: auto; padding-bottom: 10px; margin-top: 44px;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.social-highlights::-webkit-scrollbar { height: 5px; }
+.social-highlights::-webkit-scrollbar-thumb { background: var(--gray-300); }
+.sh-item {
+  flex: 0 0 78%; scroll-snap-align: start; background: var(--white); position: relative;
+  border: 1px solid var(--gray-300); text-decoration: none; display: block; color: inherit;
+}
+.sh-item .sh-media { aspect-ratio: 4/5; position: relative; overflow: hidden; }
+.sh-item .sh-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease); }
+.sh-item:hover .sh-media img, .sh-item:focus-visible .sh-media img { transform: scale(1.04); }
+.sh-item .sh-badge {
+  position: absolute; top: 12px; left: 12px; width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(10,10,10,0.72); color: var(--champagne); display: flex; align-items: center; justify-content: center;
+}
+.sh-item .sh-badge .social-icon-svg { width: 15px; height: 15px; }
+.sh-item .sh-body { padding: 16px 18px; }
+.sh-item .sh-caption { font-size: 0.85rem; color: var(--ink); line-height: 1.5; margin-bottom: 6px; }
+.sh-item .sh-date { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); }
+.sh-item:focus-visible { outline: 2px solid var(--burgundy); outline-offset: 2px; }
+.sh-item.is-featured { flex-basis: 88%; }
+.sh-item.is-featured .sh-media { aspect-ratio: 16/10; }
+@media (min-width: 860px) {
+  .social-highlights {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr; grid-auto-rows: 1fr; gap: 20px;
+    overflow: visible; margin-top: 48px;
+  }
+  .sh-item, .sh-item.is-featured { flex-basis: auto; }
+  .sh-item.is-featured { grid-row: 1 / 3; }
+  .sh-item.is-featured .sh-media { aspect-ratio: auto; height: 100%; min-height: 340px; }
+}
+.follow-journey-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 40px; }
+.follow-journey-actions .btn .social-icon-svg { margin-right: 8px; width: 16px; height: 16px; }
+
+/* ---- Mobile dismissible "Follow the Academy" card ---- */
+.mobile-social-card {
+  display: none; margin: 0 0 8px; background: var(--black); color: var(--white);
+  padding: 22px 22px 24px; position: relative; border: 1px solid rgba(255,255,255,0.1);
+}
+.mobile-social-card .msc-dismiss {
+  position: absolute; top: 10px; right: 10px; width: 30px; height: 30px; color: rgba(255,255,255,0.6);
+  display: flex; align-items: center; justify-content: center; font-size: 1.1rem; line-height: 1; background: none; border: none;
+}
+.mobile-social-card .msc-dismiss:hover, .mobile-social-card .msc-dismiss:focus-visible { color: var(--champagne); }
+.mobile-social-card .msc-eyebrow { display: block; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 8px; }
+.mobile-social-card h4 { font-family: var(--font-display); font-size: 1.15rem; color: var(--white); margin-bottom: 8px; padding-right: 24px; }
+.mobile-social-card p { font-size: 0.85rem; color: var(--gray-300); margin-bottom: 16px; }
+.mobile-social-card .social-icons a { border-color: rgba(255,255,255,0.25); }
+.mobile-social-card.is-dismissed { opacity: 0; transform: translateY(-6px); transition: opacity 0.3s var(--ease), transform 0.3s var(--ease); }
+@media (max-width: 720px) { .mobile-social-card { display: block; } }
+
+/* ---- Content-page share buttons ---- */
+.share-buttons { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--gray-300); }
+.share-buttons .share-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-right: 4px; }
+.share-buttons .share-btn {
+  display: flex; align-items: center; justify-content: center; width: 38px; height: 38px;
+  border: 1px solid var(--gray-300); border-radius: 50%; color: var(--burgundy); background: none; cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.share-btn:hover, .share-btn:focus-visible { background: var(--burgundy); color: var(--white); border-color: var(--burgundy); }
+.share-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.share-buttons .share-copied-note { font-size: 0.78rem; color: var(--gray-500); }

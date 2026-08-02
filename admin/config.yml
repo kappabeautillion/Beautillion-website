@@ -89,24 +89,81 @@ collections:
               - { label: "Photo", name: "image", widget: "image", required: false }
               - { label: "Photo Description (shown until a photo is uploaded)", name: "photo_label", widget: "string" }
 
-  - name: "beaux"
-    label: "Beaux Roster"
+  - name: "classes"
+    label: "Beaux — Legacy Archive"
     files:
-      - file: "content/beaux.json"
-        label: "Beaux Page"
-        name: "beaux"
+      - file: "content/classes.json"
+        label: "All Academy Classes"
+        name: "classes"
         fields:
-          - { label: "Class Year", name: "class_year", widget: "string" }
-          - label: "This Year's Beaux"
-            name: "beaux"
+          - label: "Classes"
+            name: "classes"
             widget: "list"
-            summary: "{{name}}"
+            summary: "{{year}} — {{theme}}"
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "School / Grade", name: "school", widget: "string" }
-              - { label: "Sponsor Credit", name: "sponsor", widget: "string" }
-              - { label: "Headshot", name: "image", widget: "image", required: false }
-              - { label: "Photo Description (shown until a headshot is uploaded)", name: "photo_label", widget: "string" }
+              - { label: "Class Year", name: "year", widget: "string" }
+              - { label: "URL Slug (usually same as year)", name: "slug", widget: "string" }
+              - { label: "Theme Name", name: "theme", widget: "string" }
+              - { label: "Theme Quote", name: "quote", widget: "text" }
+              - label: "Visual Style"
+                name: "style"
+                widget: "select"
+                options: ["classic", "creme", "regal", "bold", "phoenix", "renaissance"]
+              - { label: "Build the Full Class Page? (roster, honors, gallery)", name: "full_page", widget: "boolean", default: false }
+              - { label: "Intro Paragraph (full page only)", name: "intro", widget: "text", required: false }
+              - { label: "Theme Essay Title", name: "theme_essay_title", widget: "string", required: false }
+              - { label: "Theme Essay Paragraphs", name: "theme_essay", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" }, required: false }
+              - label: "Class Statistics"
+                name: "stats"
+                widget: "list"
+                required: false
+                summary: "{{label}}: {{value}}"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value", name: "value", widget: "string" }
+              - { label: "Statistics Note", name: "stats_note", widget: "string", required: false }
+              - label: "Class Honors"
+                name: "honors"
+                widget: "list"
+                required: false
+                summary: "{{title}} — {{recipient}}"
+                fields:
+                  - { label: "Award Title", name: "title", widget: "string" }
+                  - { label: "Recipient Name", name: "recipient", widget: "string" }
+                  - { label: "Significance", name: "significance", widget: "text" }
+                  - { label: "Portrait", name: "photo", widget: "image", required: false }
+                  - { label: "Portrait Description (shown until a photo is uploaded)", name: "photo_label", widget: "string" }
+              - label: "Photo Gallery"
+                name: "gallery"
+                widget: "list"
+                required: false
+                summary: "{{caption}}"
+                fields:
+                  - { label: "Caption", name: "caption", widget: "string" }
+                  - { label: "Photo", name: "image", widget: "image", required: false }
+                  - { label: "Description (shown until a photo is uploaded)", name: "label", widget: "string" }
+              - label: "Participants"
+                name: "participants"
+                widget: "list"
+                required: false
+                summary: "{{name}}"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "URL Slug (no spaces, e.g. john-smith)", name: "slug", widget: "string" }
+                  - { label: "Headshot (large profile version)", name: "photo", widget: "image", required: false }
+                  - { label: "Headshot (small directory-card version)", name: "card_photo", widget: "image", required: false, hint: "Used on the class photo grid. Leave the two headshot fields as-is for photos imported from the archive review -- only replace if you're uploading a brand-new photo." }
+                  - { label: "Archival Original (do not edit)", name: "original_photo", widget: "image", required: false }
+                  - { label: "Photo Alt Text (do not edit)", name: "alt", widget: "string", required: false }
+                  - { label: "Profile Type (do not edit)", name: "profile_type", widget: "hidden", required: false }
+                  - { label: "Hometown", name: "hometown", widget: "string", required: false }
+                  - { label: "High School", name: "high_school", widget: "string", required: false }
+                  - { label: "College", name: "college", widget: "string", required: false }
+                  - { label: "Major", name: "major", widget: "string", required: false }
+                  - { label: "Career Aspiration", name: "career", widget: "string", required: false }
+                  - { label: "Leadership Activities", name: "activities", widget: "text", required: false }
+                  - { label: "Community Service", name: "community_service", widget: "text", required: false }
+                  - { label: "Awards / Honors", name: "honors", widget: "string", required: false }
+                  - { label: "Short Biography", name: "bio", widget: "text", required: false }
 
   - name: "sponsors"
     label: "Sponsors Page"
@@ -149,3 +206,43 @@ collections:
                 options: ["ceremony", "program", "service", "sponsors"]
               - { label: "Photo", name: "image", widget: "image", required: false }
               - { label: "Text Shown Until a Photo Is Uploaded", name: "label", widget: "string" }
+
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - file: "content/site.json"
+        label: "Social Media Links"
+        name: "site"
+        fields:
+          - label: "Social Media"
+            name: "social"
+            widget: "object"
+            hint: "Full profile URLs (e.g. https://www.instagram.com/yourhandle/). These power every social icon and button across the site — header, footer, and homepage — so you only need to update them in one place."
+            fields:
+              - { label: "Instagram URL", name: "instagram", widget: "string" }
+              - { label: "Facebook URL", name: "facebook", widget: "string" }
+              - { label: "TikTok URL", name: "tiktok", widget: "string" }
+
+  - name: "social_highlights"
+    label: "Social Highlights"
+    files:
+      - file: "content/social-highlights.json"
+        label: "Follow the Journey — Curated Posts"
+        name: "social_highlights"
+        fields:
+          - label: "Posts"
+            name: "highlights"
+            widget: "list"
+            summary: "{{platform}} — {{caption}}"
+            hint: "These are the posts shown in the homepage 'Follow the Journey' section. Add posts by hand — this is never a live/scraped feed, so nothing appears here automatically. Do not add photos or details identifying a minor participant without a parent/guardian's consent, consistent with the program's photo release policy."
+            fields:
+              - { label: "Feature This Post? (shows larger, at the top)", name: "featured", widget: "boolean", default: false }
+              - label: "Platform"
+                name: "platform"
+                widget: "select"
+                options: ["instagram", "facebook", "tiktok"]
+              - { label: "Caption", name: "caption", widget: "text" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "Link to the Original Post", name: "link", widget: "string" }
+              - { label: "Photo / Video Thumbnail", name: "image", widget: "image", required: false }
+              - { label: "Image Description (for accessibility, and shown until a photo is uploaded)", name: "alt", widget: "string" }

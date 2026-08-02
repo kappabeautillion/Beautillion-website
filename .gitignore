@@ -1,0 +1,7 @@
+# Full-resolution archival photo copies are kept locally and in the source
+# Google Drive, but are intentionally excluded from git/Vercel -- the site
+# only ever links to the smaller card/ and profile/ versions below.
+assets/img/beaux/originals/
+
+.DS_Store
+__pycache__/

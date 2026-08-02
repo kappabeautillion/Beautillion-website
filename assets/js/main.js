@@ -213,6 +213,159 @@
     });
   }
 
+  /* ---------- Social media component ----------
+     Site-wide Instagram/Facebook/TikTok links are stored in
+     content/site.json so the committee can update them via the
+     CMS without touching code. This binds any [data-social="platform"]
+     element's href from that file, appends UTM tracking params
+     scoped to where the link lives (data-utm-campaign), and fires
+     a lightweight click event for analytics if a dataLayer exists.
+     Curated posts (never a live/scraped feed) live in
+     content/social-highlights.json and are rendered into the
+     homepage "Follow the Journey" grid.
+  --------------------------------------------------------- */
+  var SOCIAL_ICONS = {
+    instagram: '<svg class="social-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" stroke="none"/></svg>',
+    facebook: '<svg class="social-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9.25"/><path d="M13.6 17.2v-5.6h1.9l.3-2.3h-2.2V7.9c0-.66.18-1.12 1.13-1.12h1.2V4.72c-.21-.03-.94-.09-1.78-.09-1.76 0-2.97 1.08-2.97 3.06v1.7H9.2v2.3h1.99v5.6"/></svg>',
+    tiktok: '<svg class="social-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13.2 4v10.6a3.1 3.1 0 1 1-2.3-3v-1.5"/><path d="M13.2 4c.35 2.15 1.95 3.75 4.05 4.05v2c-1.45-.05-2.85-.55-4.05-1.4"/></svg>'
+  };
+  var PLATFORM_NAMES = { instagram: "Instagram", facebook: "Facebook", tiktok: "TikTok" };
+
+  function buildTrackedUrl(base, campaign) {
+    try {
+      var u = new URL(base);
+      u.searchParams.set("utm_source", "website");
+      u.searchParams.set("utm_medium", "social");
+      u.searchParams.set("utm_campaign", campaign || "website");
+      return u.toString();
+    } catch (e) {
+      return base;
+    }
+  }
+
+  function loadSocialLinks() {
+    var els = document.querySelectorAll("[data-social]");
+    if (!els.length) return;
+    fetch("/content/site.json", { cache: "no-store" })
+      .then(function (res) { return res.ok ? res.json() : Promise.reject(res.status); })
+      .then(function (data) {
+        var social = (data && data.social) || {};
+        els.forEach(function (el) {
+          var platform = el.getAttribute("data-social");
+          var base = social[platform];
+          if (!base) return;
+          var campaign = el.getAttribute("data-utm-campaign") || "website";
+          el.setAttribute("href", buildTrackedUrl(base, campaign));
+        });
+      })
+      .catch(function () { /* links stay as "#" if the file can't be reached */ });
+  }
+  loadSocialLinks();
+
+  // Click tracking: pushes to window.dataLayer if present (e.g. once GTM/GA
+  // is added later); otherwise this is a harmless no-op.
+  document.addEventListener("click", function (e) {
+    var el = e.target.closest("[data-social]");
+    if (!el) return;
+    var platform = el.getAttribute("data-social");
+    var location = el.getAttribute("data-utm-campaign") || "unknown";
+    if (window.dataLayer && typeof window.dataLayer.push === "function") {
+      window.dataLayer.push({ event: "social_click", social_platform: platform, social_location: location });
+    }
+  });
+
+  /* ---------- Homepage: Follow the Journey curated grid ---------- */
+  function loadSocialHighlights() {
+    var grid = document.getElementById("home-social-highlights");
+    if (!grid) return;
+    fetch("/content/social-highlights.json", { cache: "no-store" })
+      .then(function (res) { return res.ok ? res.json() : Promise.reject(res.status); })
+      .then(function (data) {
+        var items = (data && data.highlights) || [];
+        if (!items.length) return;
+        var featured = items.filter(function (i) { return i.featured; })[0] || items[0];
+        var rest = items.filter(function (i) { return i !== featured; }).slice(0, 5);
+        var ordered = [featured].concat(rest);
+        grid.innerHTML = ordered.map(function (item, i) {
+          var icon = SOCIAL_ICONS[item.platform] || "";
+          var name = PLATFORM_NAMES[item.platform] || item.platform;
+          var media = item.image
+            ? '<img src="' + item.image + '" alt="' + (item.alt || "").replace(/"/g, "&quot;") + '" />'
+            : window.Beautillion.phPhoto(item.alt || name + " post");
+          var dateLabel = "";
+          if (item.date) {
+            var d = new Date(item.date + "T00:00:00");
+            if (!isNaN(d.getTime())) dateLabel = d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+          }
+          return '' +
+            '<a class="sh-item' + (i === 0 ? " is-featured" : "") + '" href="' + (item.link || "#") + '" ' +
+            'data-social="' + item.platform + '" data-utm-campaign="homepage_grid" target="_blank" rel="noopener noreferrer" ' +
+            'aria-label="View this ' + name + ' post (opens in a new tab): ' + (item.caption || "").replace(/"/g, "&quot;") + '">' +
+            '<div class="sh-media">' + media + '<span class="sh-badge">' + icon + '</span></div>' +
+            '<div class="sh-body"><p class="sh-caption">' + (item.caption || "") + '</p><span class="sh-date">' + dateLabel + '</span></div>' +
+            '</a>';
+        }).join("");
+        loadSocialLinks(); // re-run in case any injected [data-social] elements need UTM hrefs (grid items already have direct links, this is a no-op safeguard)
+      })
+      .catch(function () { /* section simply stays empty if the file can't be reached */ });
+  }
+  loadSocialHighlights();
+
+  /* ---------- Mobile "Follow the Academy" card: dismiss once per session ---------- */
+  (function () {
+    var card = document.getElementById("mobile-social-card");
+    if (!card) return;
+    if (sessionStorage.getItem("beautillion-social-card-dismissed")) {
+      card.parentNode.removeChild(card);
+      return;
+    }
+    var dismissBtn = document.getElementById("msc-dismiss");
+    if (dismissBtn) {
+      dismissBtn.addEventListener("click", function () {
+        card.classList.add("is-dismissed");
+        sessionStorage.setItem("beautillion-social-card-dismissed", "1");
+        setTimeout(function () {
+          if (card.parentNode) card.parentNode.removeChild(card);
+        }, 300);
+      });
+    }
+  })();
+
+  /* ---------- Content-page share buttons ---------- */
+  document.querySelectorAll(".share-buttons").forEach(function (bar) {
+    var pageUrl = window.location.href;
+    var pageTitle = document.title;
+    var nativeBtn = bar.querySelector("[data-share-native]");
+    if (nativeBtn) {
+      if (navigator.share) {
+        nativeBtn.addEventListener("click", function () {
+          navigator.share({ title: pageTitle, url: pageUrl }).catch(function () {});
+        });
+      } else {
+        nativeBtn.style.display = "none";
+      }
+    }
+    var fbBtn = bar.querySelector('[data-share="facebook"]');
+    if (fbBtn) {
+      fbBtn.setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(pageUrl));
+    }
+    var copyBtn = bar.querySelector("[data-share-copy]");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", function () {
+        var note = bar.querySelector(".share-copied-note");
+        function announce() {
+          if (note) {
+            note.textContent = "Link copied";
+            setTimeout(function () { note.textContent = ""; }, 2500);
+          }
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(pageUrl).then(announce).catch(function () {});
+        }
+      });
+    }
+  });
+
   /* ---------- Current year in footer ---------- */
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
