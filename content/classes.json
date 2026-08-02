@@ -25,30 +25,12 @@
       "full_page": false,
       "participants": [
         {
-          "name": "Arthur Johnson",
-          "slug": "arthur-johnson",
-          "photo": "/assets/img/beaux/profiles/2011/arthur-johnson.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/arthur-johnson.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/arthur-johnson.jpg",
-          "alt": "Professional headshot of Arthur Johnson, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Brandon Daniels",
-          "slug": "brandon-daniels",
-          "photo": "/assets/img/beaux/profiles/2011/brandon-daniels.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/brandon-daniels.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/brandon-daniels.jpg",
-          "alt": "Professional headshot of Brandon Daniels, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Brandon McCleese",
-          "slug": "brandon-mccleese",
-          "photo": "/assets/img/beaux/profiles/2011/brandon-mccleese.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/brandon-mccleese.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/brandon-mccleese.jpg",
-          "alt": "Professional headshot of Brandon McCleese, Beautillion Leadership Academy Class of 2011.",
+          "name": "Rashon Bennett",
+          "slug": "rashon-bennett",
+          "photo": "/assets/img/beaux/profiles/2011/rashon-bennett.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/rashon-bennett.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/rashon-bennett.jpg",
+          "alt": "Professional headshot of Rashon Bennett, Beautillion Leadership Academy Class of 2011.",
           "profile_type": "photo_only"
         },
         {
@@ -61,21 +43,12 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Domonique Ransom",
-          "slug": "domonique-ransom",
-          "photo": "/assets/img/beaux/profiles/2011/domonique-ransom.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/domonique-ransom.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/domonique-ransom.jpg",
-          "alt": "Professional headshot of Domonique Ransom, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Donte Fauntleroy",
-          "slug": "donte-fauntleroy",
-          "photo": "/assets/img/beaux/profiles/2011/donte-fauntleroy.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/donte-fauntleroy.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/donte-fauntleroy.jpg",
-          "alt": "Professional headshot of Donte Fauntleroy, Beautillion Leadership Academy Class of 2011.",
+          "name": "Patrick Boyd",
+          "slug": "patrick-boyd",
+          "photo": "/assets/img/beaux/profiles/2011/patrick-boyd.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/patrick-boyd.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/patrick-boyd.jpg",
+          "alt": "Professional headshot of Patrick Boyd, Beautillion Leadership Academy Class of 2011.",
           "profile_type": "photo_only"
         },
         {
@@ -88,30 +61,12 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Jordan Reaves",
-          "slug": "jordan-reaves",
-          "photo": "/assets/img/beaux/profiles/2011/jordan-reaves.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/jordan-reaves.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/jordan-reaves.jpg",
-          "alt": "Professional headshot of Jordan Reaves, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Kayode Gloster",
-          "slug": "kayode-gloster",
-          "photo": "/assets/img/beaux/profiles/2011/kayode-gloster.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/kayode-gloster.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/kayode-gloster.jpg",
-          "alt": "Professional headshot of Kayode Gloster, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Kerwyn Ross",
-          "slug": "kerwyn-ross",
-          "photo": "/assets/img/beaux/profiles/2011/kerwyn-ross.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/kerwyn-ross.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/kerwyn-ross.jpg",
-          "alt": "Professional headshot of Kerwyn Ross, Beautillion Leadership Academy Class of 2011.",
+          "name": "Brandon Daniels",
+          "slug": "brandon-daniels",
+          "photo": "/assets/img/beaux/profiles/2011/brandon-daniels.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/brandon-daniels.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/brandon-daniels.jpg",
+          "alt": "Professional headshot of Brandon Daniels, Beautillion Leadership Academy Class of 2011.",
           "profile_type": "photo_only"
         },
         {
@@ -124,39 +79,12 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Marvin Green",
-          "slug": "marvin-green",
-          "photo": "/assets/img/beaux/profiles/2011/marvin-green.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/marvin-green.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/marvin-green.jpg",
-          "alt": "Professional headshot of Marvin Green, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Michael Tyler-Smith",
-          "slug": "michael-tyler-smith",
-          "photo": "/assets/img/beaux/profiles/2011/michael-tyler-smith.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/michael-tyler-smith.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/michael-tyler-smith.jpg",
-          "alt": "Professional headshot of Michael Tyler-Smith, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Patrick Boyd",
-          "slug": "patrick-boyd",
-          "photo": "/assets/img/beaux/profiles/2011/patrick-boyd.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/patrick-boyd.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/patrick-boyd.jpg",
-          "alt": "Professional headshot of Patrick Boyd, Beautillion Leadership Academy Class of 2011.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Rashon Bennett",
-          "slug": "rashon-bennett",
-          "photo": "/assets/img/beaux/profiles/2011/rashon-bennett.webp",
-          "card_photo": "/assets/img/beaux/cards/2011/rashon-bennett.webp",
-          "original_photo": "/assets/img/beaux/originals/2011/rashon-bennett.jpg",
-          "alt": "Professional headshot of Rashon Bennett, Beautillion Leadership Academy Class of 2011.",
+          "name": "Donte Fauntleroy",
+          "slug": "donte-fauntleroy",
+          "photo": "/assets/img/beaux/profiles/2011/donte-fauntleroy.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/donte-fauntleroy.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/donte-fauntleroy.jpg",
+          "alt": "Professional headshot of Donte Fauntleroy, Beautillion Leadership Academy Class of 2011.",
           "profile_type": "photo_only"
         },
         {
@@ -169,12 +97,84 @@
           "profile_type": "photo_only"
         },
         {
+          "name": "Kayode Gloster",
+          "slug": "kayode-gloster",
+          "photo": "/assets/img/beaux/profiles/2011/kayode-gloster.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/kayode-gloster.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/kayode-gloster.jpg",
+          "alt": "Professional headshot of Kayode Gloster, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Marvin Green",
+          "slug": "marvin-green",
+          "photo": "/assets/img/beaux/profiles/2011/marvin-green.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/marvin-green.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/marvin-green.jpg",
+          "alt": "Professional headshot of Marvin Green, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Arthur Johnson",
+          "slug": "arthur-johnson",
+          "photo": "/assets/img/beaux/profiles/2011/arthur-johnson.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/arthur-johnson.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/arthur-johnson.jpg",
+          "alt": "Professional headshot of Arthur Johnson, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Brandon McCleese",
+          "slug": "brandon-mccleese",
+          "photo": "/assets/img/beaux/profiles/2011/brandon-mccleese.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/brandon-mccleese.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/brandon-mccleese.jpg",
+          "alt": "Professional headshot of Brandon McCleese, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Domonique Ransom",
+          "slug": "domonique-ransom",
+          "photo": "/assets/img/beaux/profiles/2011/domonique-ransom.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/domonique-ransom.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/domonique-ransom.jpg",
+          "alt": "Professional headshot of Domonique Ransom, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jordan Reaves",
+          "slug": "jordan-reaves",
+          "photo": "/assets/img/beaux/profiles/2011/jordan-reaves.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/jordan-reaves.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/jordan-reaves.jpg",
+          "alt": "Professional headshot of Jordan Reaves, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Kerwyn Ross",
+          "slug": "kerwyn-ross",
+          "photo": "/assets/img/beaux/profiles/2011/kerwyn-ross.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/kerwyn-ross.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/kerwyn-ross.jpg",
+          "alt": "Professional headshot of Kerwyn Ross, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
           "name": "Vincent Shockley",
           "slug": "vincent-shockley",
           "photo": "/assets/img/beaux/profiles/2011/vincent-shockley.webp",
           "card_photo": "/assets/img/beaux/cards/2011/vincent-shockley.webp",
           "original_photo": "/assets/img/beaux/originals/2011/vincent-shockley.jpg",
           "alt": "Professional headshot of Vincent Shockley, Beautillion Leadership Academy Class of 2011.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Michael Tyler-Smith",
+          "slug": "michael-tyler-smith",
+          "photo": "/assets/img/beaux/profiles/2011/michael-tyler-smith.webp",
+          "card_photo": "/assets/img/beaux/cards/2011/michael-tyler-smith.webp",
+          "original_photo": "/assets/img/beaux/originals/2011/michael-tyler-smith.jpg",
+          "alt": "Professional headshot of Michael Tyler-Smith, Beautillion Leadership Academy Class of 2011.",
           "profile_type": "photo_only"
         },
         {
@@ -197,138 +197,12 @@
       "full_page": false,
       "participants": [
         {
-          "name": "Arkeem Graves",
-          "slug": "arkeem-graves",
-          "photo": "/assets/img/beaux/profiles/2013/arkeem-graves.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/arkeem-graves.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/arkeem-graves.jpg",
-          "alt": "Professional headshot of Arkeem Graves, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Durell Robinson",
-          "slug": "durell-robinson",
-          "photo": "/assets/img/beaux/profiles/2013/durell-robinson.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/durell-robinson.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/durell-robinson.jpg",
-          "alt": "Professional headshot of Durell Robinson, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Dwayne Gibbons",
-          "slug": "dwayne-gibbons",
-          "photo": "/assets/img/beaux/profiles/2013/dwayne-gibbons.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/dwayne-gibbons.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/dwayne-gibbons.jpg",
-          "alt": "Professional headshot of Dwayne Gibbons, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Elijah Chatman",
-          "slug": "elijah-chatman",
-          "photo": "/assets/img/beaux/profiles/2013/elijah-chatman.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/elijah-chatman.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/elijah-chatman.jpg",
-          "alt": "Professional headshot of Elijah Chatman, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
           "name": "Franklyn Benjamin",
           "slug": "franklyn-benjamin",
           "photo": "/assets/img/beaux/profiles/2013/franklyn-benjamin.webp",
           "card_photo": "/assets/img/beaux/cards/2013/franklyn-benjamin.webp",
           "original_photo": "/assets/img/beaux/originals/2013/franklyn-benjamin.jpg",
           "alt": "Professional headshot of Franklyn Benjamin, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "George Gaines",
-          "slug": "george-gaines",
-          "photo": "/assets/img/beaux/profiles/2013/george-gaines.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/george-gaines.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/george-gaines.jpg",
-          "alt": "Professional headshot of George Gaines, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jahquay Ogawa",
-          "slug": "jahquay-ogawa",
-          "photo": "/assets/img/beaux/profiles/2013/jahquay-ogawa.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/jahquay-ogawa.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/jahquay-ogawa.jpg",
-          "alt": "Professional headshot of Jahquay Ogawa, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jalen Davis",
-          "slug": "jalen-davis",
-          "photo": "/assets/img/beaux/profiles/2013/jalen-davis.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/jalen-davis.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/jalen-davis.jpg",
-          "alt": "Professional headshot of Jalen Davis, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jharet Crawford",
-          "slug": "jharet-crawford",
-          "photo": "/assets/img/beaux/profiles/2013/jharet-crawford.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/jharet-crawford.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/jharet-crawford.jpg",
-          "alt": "Professional headshot of Jharet Crawford, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Joseph Wood",
-          "slug": "joseph-wood",
-          "photo": "/assets/img/beaux/profiles/2013/joseph-wood.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/joseph-wood.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/joseph-wood.jpg",
-          "alt": "Professional headshot of Joseph Wood, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Karim Mclaren",
-          "slug": "karim-mclaren",
-          "photo": "/assets/img/beaux/profiles/2013/karim-mclaren.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/karim-mclaren.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/karim-mclaren.jpg",
-          "alt": "Professional headshot of Karim Mclaren, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Kelvin Davis King",
-          "slug": "kelvin-davis-king",
-          "photo": "/assets/img/beaux/profiles/2013/kelvin-davis-king.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/kelvin-davis-king.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/kelvin-davis-king.jpg",
-          "alt": "Professional headshot of Kelvin Davis King, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Khalil Keaton",
-          "slug": "khalil-keaton",
-          "photo": "/assets/img/beaux/profiles/2013/khalil-keaton.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/khalil-keaton.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/khalil-keaton.jpg",
-          "alt": "Professional headshot of Khalil Keaton, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Marcus Tatum",
-          "slug": "marcus-tatum",
-          "photo": "/assets/img/beaux/profiles/2013/marcus-tatum.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/marcus-tatum.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/marcus-tatum.jpg",
-          "alt": "Professional headshot of Marcus Tatum, Beautillion Leadership Academy Class of 2013.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Paul Davis",
-          "slug": "paul-davis",
-          "photo": "/assets/img/beaux/profiles/2013/paul-davis.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/paul-davis.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/paul-davis.jpg",
-          "alt": "Professional headshot of Paul Davis, Beautillion Leadership Academy Class of 2013.",
           "profile_type": "photo_only"
         },
         {
@@ -341,12 +215,66 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Raymond Richards",
-          "slug": "raymond-richards",
-          "photo": "/assets/img/beaux/profiles/2013/raymond-richards.webp",
-          "card_photo": "/assets/img/beaux/cards/2013/raymond-richards.webp",
-          "original_photo": "/assets/img/beaux/originals/2013/raymond-richards.jpg",
-          "alt": "Professional headshot of Raymond Richards, Beautillion Leadership Academy Class of 2013.",
+          "name": "Elijah Chatman",
+          "slug": "elijah-chatman",
+          "photo": "/assets/img/beaux/profiles/2013/elijah-chatman.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/elijah-chatman.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/elijah-chatman.jpg",
+          "alt": "Professional headshot of Elijah Chatman, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jharet Crawford",
+          "slug": "jharet-crawford",
+          "photo": "/assets/img/beaux/profiles/2013/jharet-crawford.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/jharet-crawford.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/jharet-crawford.jpg",
+          "alt": "Professional headshot of Jharet Crawford, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jalen Davis",
+          "slug": "jalen-davis",
+          "photo": "/assets/img/beaux/profiles/2013/jalen-davis.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/jalen-davis.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/jalen-davis.jpg",
+          "alt": "Professional headshot of Jalen Davis, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Paul Davis",
+          "slug": "paul-davis",
+          "photo": "/assets/img/beaux/profiles/2013/paul-davis.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/paul-davis.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/paul-davis.jpg",
+          "alt": "Professional headshot of Paul Davis, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "George Gaines",
+          "slug": "george-gaines",
+          "photo": "/assets/img/beaux/profiles/2013/george-gaines.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/george-gaines.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/george-gaines.jpg",
+          "alt": "Professional headshot of George Gaines, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Dwayne Gibbons",
+          "slug": "dwayne-gibbons",
+          "photo": "/assets/img/beaux/profiles/2013/dwayne-gibbons.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/dwayne-gibbons.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/dwayne-gibbons.jpg",
+          "alt": "Professional headshot of Dwayne Gibbons, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Arkeem Graves",
+          "slug": "arkeem-graves",
+          "photo": "/assets/img/beaux/profiles/2013/arkeem-graves.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/arkeem-graves.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/arkeem-graves.jpg",
+          "alt": "Professional headshot of Arkeem Graves, Beautillion Leadership Academy Class of 2013.",
           "profile_type": "photo_only"
         },
         {
@@ -359,12 +287,84 @@
           "profile_type": "photo_only"
         },
         {
+          "name": "Khalil Keaton",
+          "slug": "khalil-keaton",
+          "photo": "/assets/img/beaux/profiles/2013/khalil-keaton.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/khalil-keaton.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/khalil-keaton.jpg",
+          "alt": "Professional headshot of Khalil Keaton, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Kelvin Davis King",
+          "slug": "kelvin-davis-king",
+          "photo": "/assets/img/beaux/profiles/2013/kelvin-davis-king.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/kelvin-davis-king.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/kelvin-davis-king.jpg",
+          "alt": "Professional headshot of Kelvin Davis King, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Karim Mclaren",
+          "slug": "karim-mclaren",
+          "photo": "/assets/img/beaux/profiles/2013/karim-mclaren.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/karim-mclaren.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/karim-mclaren.jpg",
+          "alt": "Professional headshot of Karim Mclaren, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jahquay Ogawa",
+          "slug": "jahquay-ogawa",
+          "photo": "/assets/img/beaux/profiles/2013/jahquay-ogawa.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/jahquay-ogawa.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/jahquay-ogawa.jpg",
+          "alt": "Professional headshot of Jahquay Ogawa, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
           "name": "Tyleer Ogawa",
           "slug": "tyleer-ogawa",
           "photo": "/assets/img/beaux/profiles/2013/tyleer-ogawa.webp",
           "card_photo": "/assets/img/beaux/cards/2013/tyleer-ogawa.webp",
           "original_photo": "/assets/img/beaux/originals/2013/tyleer-ogawa.jpg",
           "alt": "Professional headshot of Tyleer Ogawa, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Raymond Richards",
+          "slug": "raymond-richards",
+          "photo": "/assets/img/beaux/profiles/2013/raymond-richards.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/raymond-richards.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/raymond-richards.jpg",
+          "alt": "Professional headshot of Raymond Richards, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Durell Robinson",
+          "slug": "durell-robinson",
+          "photo": "/assets/img/beaux/profiles/2013/durell-robinson.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/durell-robinson.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/durell-robinson.jpg",
+          "alt": "Professional headshot of Durell Robinson, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Marcus Tatum",
+          "slug": "marcus-tatum",
+          "photo": "/assets/img/beaux/profiles/2013/marcus-tatum.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/marcus-tatum.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/marcus-tatum.jpg",
+          "alt": "Professional headshot of Marcus Tatum, Beautillion Leadership Academy Class of 2013.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Joseph Wood",
+          "slug": "joseph-wood",
+          "photo": "/assets/img/beaux/profiles/2013/joseph-wood.webp",
+          "card_photo": "/assets/img/beaux/cards/2013/joseph-wood.webp",
+          "original_photo": "/assets/img/beaux/originals/2013/joseph-wood.jpg",
+          "alt": "Professional headshot of Joseph Wood, Beautillion Leadership Academy Class of 2013.",
           "profile_type": "photo_only"
         }
       ]
@@ -377,186 +377,6 @@
       "style": "regal",
       "full_page": false,
       "participants": [
-        {
-          "name": "Adrian Swint",
-          "slug": "adrian-swint",
-          "photo": "/assets/img/beaux/profiles/2015/adrian-swint.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/adrian-swint.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/adrian-swint.jpg",
-          "alt": "Professional headshot of Adrian Swint, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Chayse McLaughlin",
-          "slug": "chayse-mclaughlin",
-          "photo": "/assets/img/beaux/profiles/2015/chayse-mclaughlin.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/chayse-mclaughlin.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/chayse-mclaughlin.jpg",
-          "alt": "Professional headshot of Chayse McLaughlin, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Christian Sabree",
-          "slug": "christian-sabree",
-          "photo": "/assets/img/beaux/profiles/2015/christian-sabree.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/christian-sabree.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/christian-sabree.jpg",
-          "alt": "Professional headshot of Christian Sabree, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Clifton Jackson",
-          "slug": "clifton-jackson",
-          "photo": "/assets/img/beaux/profiles/2015/clifton-jackson.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/clifton-jackson.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/clifton-jackson.jpg",
-          "alt": "Professional headshot of Clifton Jackson, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Donovan Swint",
-          "slug": "donovan-swint",
-          "photo": "/assets/img/beaux/profiles/2015/donovan-swint.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/donovan-swint.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/donovan-swint.jpg",
-          "alt": "Professional headshot of Donovan Swint, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Eric Stranix",
-          "slug": "eric-stranix",
-          "photo": "/assets/img/beaux/profiles/2015/eric-stranix.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/eric-stranix.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/eric-stranix.jpg",
-          "alt": "Professional headshot of Eric Stranix, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jaashon Bowers",
-          "slug": "jaashon-bowers",
-          "photo": "/assets/img/beaux/profiles/2015/jaashon-bowers.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jaashon-bowers.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jaashon-bowers.jpg",
-          "alt": "Professional headshot of Jaashon Bowers, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jared Torres",
-          "slug": "jared-torres",
-          "photo": "/assets/img/beaux/profiles/2015/jared-torres.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jared-torres.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jared-torres.jpg",
-          "alt": "Professional headshot of Jared Torres, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jason Butler",
-          "slug": "jason-butler",
-          "photo": "/assets/img/beaux/profiles/2015/jason-butler.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jason-butler.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jason-butler.jpg",
-          "alt": "Professional headshot of Jason Butler, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jason Frisby",
-          "slug": "jason-frisby",
-          "photo": "/assets/img/beaux/profiles/2015/jason-frisby.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jason-frisby.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jason-frisby.jpg",
-          "alt": "Professional headshot of Jason Frisby, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jaysson McKnight",
-          "slug": "jaysson-mcknight",
-          "photo": "/assets/img/beaux/profiles/2015/jaysson-mcknight.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jaysson-mcknight.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jaysson-mcknight.jpg",
-          "alt": "Professional headshot of Jaysson McKnight, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "John Childress",
-          "slug": "john-childress",
-          "photo": "/assets/img/beaux/profiles/2015/john-childress.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/john-childress.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/john-childress.jpg",
-          "alt": "Professional headshot of John Childress, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jonah Roadcloud",
-          "slug": "jonah-roadcloud",
-          "photo": "/assets/img/beaux/profiles/2015/jonah-roadcloud.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jonah-roadcloud.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jonah-roadcloud.jpg",
-          "alt": "Professional headshot of Jonah Roadcloud, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jonathan Thomas",
-          "slug": "jonathan-thomas",
-          "photo": "/assets/img/beaux/profiles/2015/jonathan-thomas.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jonathan-thomas.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jonathan-thomas.jpg",
-          "alt": "Professional headshot of Jonathan Thomas, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jordan Stansbury",
-          "slug": "jordan-stansbury",
-          "photo": "/assets/img/beaux/profiles/2015/jordan-stansbury.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jordan-stansbury.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jordan-stansbury.jpg",
-          "alt": "Professional headshot of Jordan Stansbury, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jordan Wood",
-          "slug": "jordan-wood",
-          "photo": "/assets/img/beaux/profiles/2015/jordan-wood.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/jordan-wood.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/jordan-wood.jpg",
-          "alt": "Professional headshot of Jordan Wood, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Kasim Shaw",
-          "slug": "kasim-shaw",
-          "photo": "/assets/img/beaux/profiles/2015/kasim-shaw.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/kasim-shaw.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/kasim-shaw.jpg",
-          "alt": "Professional headshot of Kasim Shaw, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Larry Brown Jr.",
-          "slug": "larry-brown-jr",
-          "photo": "/assets/img/beaux/profiles/2015/larry-brown-jr.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/larry-brown-jr.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/larry-brown-jr.jpg",
-          "alt": "Professional headshot of Larry Brown Jr., Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Lorenzo Drayton",
-          "slug": "lorenzo-drayton",
-          "photo": "/assets/img/beaux/profiles/2015/lorenzo-drayton.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/lorenzo-drayton.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/lorenzo-drayton.jpg",
-          "alt": "Professional headshot of Lorenzo Drayton, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Melvin Sheppard",
-          "slug": "melvin-sheppard",
-          "photo": "/assets/img/beaux/profiles/2015/melvin-sheppard.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/melvin-sheppard.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/melvin-sheppard.jpg",
-          "alt": "Professional headshot of Melvin Sheppard, Beautillion Leadership Academy Class of 2015.",
-          "profile_type": "photo_only"
-        },
         {
           "name": "Michael Beavers",
           "slug": "michael-beavers",
@@ -576,12 +396,66 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Nicholas Rivera",
-          "slug": "nicholas-rivera",
-          "photo": "/assets/img/beaux/profiles/2015/nicholas-rivera.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/nicholas-rivera.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/nicholas-rivera.jpg",
-          "alt": "Professional headshot of Nicholas Rivera, Beautillion Leadership Academy Class of 2015.",
+          "name": "Jaashon Bowers",
+          "slug": "jaashon-bowers",
+          "photo": "/assets/img/beaux/profiles/2015/jaashon-bowers.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jaashon-bowers.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jaashon-bowers.jpg",
+          "alt": "Professional headshot of Jaashon Bowers, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Larry Brown Jr.",
+          "slug": "larry-brown-jr",
+          "photo": "/assets/img/beaux/profiles/2015/larry-brown-jr.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/larry-brown-jr.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/larry-brown-jr.jpg",
+          "alt": "Professional headshot of Larry Brown Jr., Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jason Butler",
+          "slug": "jason-butler",
+          "photo": "/assets/img/beaux/profiles/2015/jason-butler.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jason-butler.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jason-butler.jpg",
+          "alt": "Professional headshot of Jason Butler, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "John Childress",
+          "slug": "john-childress",
+          "photo": "/assets/img/beaux/profiles/2015/john-childress.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/john-childress.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/john-childress.jpg",
+          "alt": "Professional headshot of John Childress, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Lorenzo Drayton",
+          "slug": "lorenzo-drayton",
+          "photo": "/assets/img/beaux/profiles/2015/lorenzo-drayton.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/lorenzo-drayton.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/lorenzo-drayton.jpg",
+          "alt": "Professional headshot of Lorenzo Drayton, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jason Frisby",
+          "slug": "jason-frisby",
+          "photo": "/assets/img/beaux/profiles/2015/jason-frisby.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jason-frisby.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jason-frisby.jpg",
+          "alt": "Professional headshot of Jason Frisby, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Clifton Jackson",
+          "slug": "clifton-jackson",
+          "photo": "/assets/img/beaux/profiles/2015/clifton-jackson.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/clifton-jackson.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/clifton-jackson.jpg",
+          "alt": "Professional headshot of Clifton Jackson, Beautillion Leadership Academy Class of 2015.",
           "profile_type": "photo_only"
         },
         {
@@ -603,12 +477,21 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Reginald Spencer",
-          "slug": "reginald-spencer",
-          "photo": "/assets/img/beaux/profiles/2015/reginald-spencer.webp",
-          "card_photo": "/assets/img/beaux/cards/2015/reginald-spencer.webp",
-          "original_photo": "/assets/img/beaux/originals/2015/reginald-spencer.jpg",
-          "alt": "Professional headshot of Reginald Spencer, Beautillion Leadership Academy Class of 2015.",
+          "name": "Jaysson McKnight",
+          "slug": "jaysson-mcknight",
+          "photo": "/assets/img/beaux/profiles/2015/jaysson-mcknight.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jaysson-mcknight.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jaysson-mcknight.jpg",
+          "alt": "Professional headshot of Jaysson McKnight, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Chayse McLaughlin",
+          "slug": "chayse-mclaughlin",
+          "photo": "/assets/img/beaux/profiles/2015/chayse-mclaughlin.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/chayse-mclaughlin.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/chayse-mclaughlin.jpg",
+          "alt": "Professional headshot of Chayse McLaughlin, Beautillion Leadership Academy Class of 2015.",
           "profile_type": "photo_only"
         },
         {
@@ -618,6 +501,123 @@
           "card_photo": "/assets/img/beaux/cards/2015/robert-peoples.webp",
           "original_photo": "/assets/img/beaux/originals/2015/robert-peoples.jpg",
           "alt": "Professional headshot of Robert Peoples, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Nicholas Rivera",
+          "slug": "nicholas-rivera",
+          "photo": "/assets/img/beaux/profiles/2015/nicholas-rivera.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/nicholas-rivera.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/nicholas-rivera.jpg",
+          "alt": "Professional headshot of Nicholas Rivera, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jonah Roadcloud",
+          "slug": "jonah-roadcloud",
+          "photo": "/assets/img/beaux/profiles/2015/jonah-roadcloud.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jonah-roadcloud.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jonah-roadcloud.jpg",
+          "alt": "Professional headshot of Jonah Roadcloud, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Christian Sabree",
+          "slug": "christian-sabree",
+          "photo": "/assets/img/beaux/profiles/2015/christian-sabree.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/christian-sabree.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/christian-sabree.jpg",
+          "alt": "Professional headshot of Christian Sabree, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Kasim Shaw",
+          "slug": "kasim-shaw",
+          "photo": "/assets/img/beaux/profiles/2015/kasim-shaw.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/kasim-shaw.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/kasim-shaw.jpg",
+          "alt": "Professional headshot of Kasim Shaw, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Melvin Sheppard",
+          "slug": "melvin-sheppard",
+          "photo": "/assets/img/beaux/profiles/2015/melvin-sheppard.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/melvin-sheppard.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/melvin-sheppard.jpg",
+          "alt": "Professional headshot of Melvin Sheppard, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Reginald Spencer",
+          "slug": "reginald-spencer",
+          "photo": "/assets/img/beaux/profiles/2015/reginald-spencer.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/reginald-spencer.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/reginald-spencer.jpg",
+          "alt": "Professional headshot of Reginald Spencer, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jordan Stansbury",
+          "slug": "jordan-stansbury",
+          "photo": "/assets/img/beaux/profiles/2015/jordan-stansbury.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jordan-stansbury.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jordan-stansbury.jpg",
+          "alt": "Professional headshot of Jordan Stansbury, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Eric Stranix",
+          "slug": "eric-stranix",
+          "photo": "/assets/img/beaux/profiles/2015/eric-stranix.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/eric-stranix.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/eric-stranix.jpg",
+          "alt": "Professional headshot of Eric Stranix, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Adrian Swint",
+          "slug": "adrian-swint",
+          "photo": "/assets/img/beaux/profiles/2015/adrian-swint.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/adrian-swint.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/adrian-swint.jpg",
+          "alt": "Professional headshot of Adrian Swint, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Donovan Swint",
+          "slug": "donovan-swint",
+          "photo": "/assets/img/beaux/profiles/2015/donovan-swint.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/donovan-swint.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/donovan-swint.jpg",
+          "alt": "Professional headshot of Donovan Swint, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jonathan Thomas",
+          "slug": "jonathan-thomas",
+          "photo": "/assets/img/beaux/profiles/2015/jonathan-thomas.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jonathan-thomas.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jonathan-thomas.jpg",
+          "alt": "Professional headshot of Jonathan Thomas, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jared Torres",
+          "slug": "jared-torres",
+          "photo": "/assets/img/beaux/profiles/2015/jared-torres.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jared-torres.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jared-torres.jpg",
+          "alt": "Professional headshot of Jared Torres, Beautillion Leadership Academy Class of 2015.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Jordan Wood",
+          "slug": "jordan-wood",
+          "photo": "/assets/img/beaux/profiles/2015/jordan-wood.webp",
+          "card_photo": "/assets/img/beaux/cards/2015/jordan-wood.webp",
+          "original_photo": "/assets/img/beaux/originals/2015/jordan-wood.jpg",
+          "alt": "Professional headshot of Jordan Wood, Beautillion Leadership Academy Class of 2015.",
           "profile_type": "photo_only"
         },
         {
@@ -640,15 +640,6 @@
       "full_page": false,
       "participants": [
         {
-          "name": "Alex McGinnis",
-          "slug": "alex-mcginnis",
-          "photo": "/assets/img/beaux/profiles/2017/alex-mcginnis.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/alex-mcginnis.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/alex-mcginnis.jpg",
-          "alt": "Professional headshot of Alex McGinnis, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
           "name": "Beyah Baylor",
           "slug": "beyah-baylor",
           "photo": "/assets/img/beaux/profiles/2017/beyah-baylor.webp",
@@ -658,30 +649,12 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Chase Kinzly",
-          "slug": "chase-kinzly",
-          "photo": "/assets/img/beaux/profiles/2017/chase-kinzly.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/chase-kinzly.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/chase-kinzly.jpg",
-          "alt": "Professional headshot of Chase Kinzly, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Chase Tinsley",
-          "slug": "chase-tinsley",
-          "photo": "/assets/img/beaux/profiles/2017/chase-tinsley.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/chase-tinsley.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/chase-tinsley.jpg",
-          "alt": "Professional headshot of Chase Tinsley, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Darius Rudd",
-          "slug": "darius-rudd",
-          "photo": "/assets/img/beaux/profiles/2017/darius-rudd.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/darius-rudd.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/darius-rudd.jpg",
-          "alt": "Professional headshot of Darius Rudd, Beautillion Leadership Academy Class of 2017.",
+          "name": "William Benjamin",
+          "slug": "william-benjamin",
+          "photo": "/assets/img/beaux/profiles/2017/william-benjamin.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/william-benjamin.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/william-benjamin.jpg",
+          "alt": "Professional headshot of William Benjamin, Beautillion Leadership Academy Class of 2017.",
           "profile_type": "photo_only"
         },
         {
@@ -694,48 +667,12 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "James Shepard",
-          "slug": "james-shepard",
-          "photo": "/assets/img/beaux/profiles/2017/james-shepard.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/james-shepard.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/james-shepard.jpg",
-          "alt": "Professional headshot of James Shepard, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jeremiah Mitial",
-          "slug": "jeremiah-mitial",
-          "photo": "/assets/img/beaux/profiles/2017/jeremiah-mitial.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/jeremiah-mitial.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/jeremiah-mitial.jpg",
-          "alt": "Professional headshot of Jeremiah Mitial, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Joe_l Garriga",
-          "slug": "joe-l-garriga",
-          "photo": "/assets/img/beaux/profiles/2017/joe-l-garriga.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/joe-l-garriga.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/joe-l-garriga.jpg",
-          "alt": "Professional headshot of Joe_l Garriga, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Joseph Plez",
-          "slug": "joseph-plez",
-          "photo": "/assets/img/beaux/profiles/2017/joseph-plez.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/joseph-plez.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/joseph-plez.jpg",
-          "alt": "Professional headshot of Joseph Plez, Beautillion Leadership Academy Class of 2017.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Joshua Sims",
-          "slug": "joshua-sims",
-          "photo": "/assets/img/beaux/profiles/2017/joshua-sims.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/joshua-sims.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/joshua-sims.jpg",
-          "alt": "Professional headshot of Joshua Sims, Beautillion Leadership Academy Class of 2017.",
+          "name": "Myles Drayton",
+          "slug": "myles-drayton",
+          "photo": "/assets/img/beaux/profiles/2017/myles-drayton.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/myles-drayton.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/myles-drayton.jpg",
+          "alt": "Professional headshot of Myles Drayton, Beautillion Leadership Academy Class of 2017.",
           "profile_type": "photo_only"
         },
         {
@@ -748,6 +685,15 @@
           "profile_type": "photo_only"
         },
         {
+          "name": "Joe_l Garriga",
+          "slug": "joe-l-garriga",
+          "photo": "/assets/img/beaux/profiles/2017/joe-l-garriga.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/joe-l-garriga.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/joe-l-garriga.jpg",
+          "alt": "Professional headshot of Joe_l Garriga, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
           "name": "Korey Hagamin",
           "slug": "korey-hagamin",
           "photo": "/assets/img/beaux/profiles/2017/korey-hagamin.webp",
@@ -757,21 +703,21 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Myles Drayton",
-          "slug": "myles-drayton",
-          "photo": "/assets/img/beaux/profiles/2017/myles-drayton.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/myles-drayton.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/myles-drayton.jpg",
-          "alt": "Professional headshot of Myles Drayton, Beautillion Leadership Academy Class of 2017.",
+          "name": "Chase Kinzly",
+          "slug": "chase-kinzly",
+          "photo": "/assets/img/beaux/profiles/2017/chase-kinzly.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/chase-kinzly.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/chase-kinzly.jpg",
+          "alt": "Professional headshot of Chase Kinzly, Beautillion Leadership Academy Class of 2017.",
           "profile_type": "photo_only"
         },
         {
-          "name": "Ricardo Patterson",
-          "slug": "ricardo-patterson",
-          "photo": "/assets/img/beaux/profiles/2017/ricardo-patterson.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/ricardo-patterson.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/ricardo-patterson.jpg",
-          "alt": "Professional headshot of Ricardo Patterson, Beautillion Leadership Academy Class of 2017.",
+          "name": "Alex McGinnis",
+          "slug": "alex-mcginnis",
+          "photo": "/assets/img/beaux/profiles/2017/alex-mcginnis.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/alex-mcginnis.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/alex-mcginnis.jpg",
+          "alt": "Professional headshot of Alex McGinnis, Beautillion Leadership Academy Class of 2017.",
           "profile_type": "photo_only"
         },
         {
@@ -784,12 +730,66 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "William Benjamin",
-          "slug": "william-benjamin",
-          "photo": "/assets/img/beaux/profiles/2017/william-benjamin.webp",
-          "card_photo": "/assets/img/beaux/cards/2017/william-benjamin.webp",
-          "original_photo": "/assets/img/beaux/originals/2017/william-benjamin.jpg",
-          "alt": "Professional headshot of William Benjamin, Beautillion Leadership Academy Class of 2017.",
+          "name": "Jeremiah Mitial",
+          "slug": "jeremiah-mitial",
+          "photo": "/assets/img/beaux/profiles/2017/jeremiah-mitial.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/jeremiah-mitial.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/jeremiah-mitial.jpg",
+          "alt": "Professional headshot of Jeremiah Mitial, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Ricardo Patterson",
+          "slug": "ricardo-patterson",
+          "photo": "/assets/img/beaux/profiles/2017/ricardo-patterson.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/ricardo-patterson.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/ricardo-patterson.jpg",
+          "alt": "Professional headshot of Ricardo Patterson, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Joseph Plez",
+          "slug": "joseph-plez",
+          "photo": "/assets/img/beaux/profiles/2017/joseph-plez.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/joseph-plez.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/joseph-plez.jpg",
+          "alt": "Professional headshot of Joseph Plez, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Darius Rudd",
+          "slug": "darius-rudd",
+          "photo": "/assets/img/beaux/profiles/2017/darius-rudd.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/darius-rudd.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/darius-rudd.jpg",
+          "alt": "Professional headshot of Darius Rudd, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "James Shepard",
+          "slug": "james-shepard",
+          "photo": "/assets/img/beaux/profiles/2017/james-shepard.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/james-shepard.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/james-shepard.jpg",
+          "alt": "Professional headshot of James Shepard, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Joshua Sims",
+          "slug": "joshua-sims",
+          "photo": "/assets/img/beaux/profiles/2017/joshua-sims.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/joshua-sims.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/joshua-sims.jpg",
+          "alt": "Professional headshot of Joshua Sims, Beautillion Leadership Academy Class of 2017.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Chase Tinsley",
+          "slug": "chase-tinsley",
+          "photo": "/assets/img/beaux/profiles/2017/chase-tinsley.webp",
+          "card_photo": "/assets/img/beaux/cards/2017/chase-tinsley.webp",
+          "original_photo": "/assets/img/beaux/originals/2017/chase-tinsley.jpg",
+          "alt": "Professional headshot of Chase Tinsley, Beautillion Leadership Academy Class of 2017.",
           "profile_type": "photo_only"
         }
       ]
@@ -812,21 +812,21 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Cameron Kee",
-          "slug": "cameron-kee",
-          "photo": "/assets/img/beaux/profiles/2019/cameron-kee.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/cameron-kee.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/cameron-kee.jpg",
-          "alt": "Professional headshot of Cameron Kee, Beautillion Leadership Academy Class of 2019.",
+          "name": "Tyiler Aponte",
+          "slug": "tyiler-aponte",
+          "photo": "/assets/img/beaux/profiles/2019/tyiler-aponte.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/tyiler-aponte.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/tyiler-aponte.jpg",
+          "alt": "Professional headshot of Tyiler Aponte, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
-          "name": "Charles Solomon",
-          "slug": "charles-solomon",
-          "photo": "/assets/img/beaux/profiles/2019/charles-solomon.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/charles-solomon.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/charles-solomon.jpg",
-          "alt": "Professional headshot of Charles Solomon, Beautillion Leadership Academy Class of 2019.",
+          "name": "Joseph Barr",
+          "slug": "joseph-barr",
+          "photo": "/assets/img/beaux/profiles/2019/joseph-barr.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/joseph-barr.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/joseph-barr.jpg",
+          "alt": "Professional headshot of Joseph Barr, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
@@ -839,12 +839,21 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Damascus Thomas",
-          "slug": "damascus-thomas",
-          "photo": "/assets/img/beaux/profiles/2019/damascus-thomas.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/damascus-thomas.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/damascus-thomas.jpg",
-          "alt": "Professional headshot of Damascus Thomas, Beautillion Leadership Academy Class of 2019.",
+          "name": "Shemar Bookman",
+          "slug": "shemar-bookman",
+          "photo": "/assets/img/beaux/profiles/2019/shemar-bookman.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/shemar-bookman.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/shemar-bookman.jpg",
+          "alt": "Professional headshot of Shemar Bookman, Beautillion Leadership Academy Class of 2019.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Nadir Daniels",
+          "slug": "nadir-daniels",
+          "photo": "/assets/img/beaux/profiles/2019/nadir-daniels.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/nadir-daniels.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/nadir-daniels.jpg",
+          "alt": "Professional headshot of Nadir Daniels, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
@@ -857,24 +866,6 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Emmanuel Lewis",
-          "slug": "emmanuel-lewis",
-          "photo": "/assets/img/beaux/profiles/2019/emmanuel-lewis.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/emmanuel-lewis.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/emmanuel-lewis.jpg",
-          "alt": "Professional headshot of Emmanuel Lewis, Beautillion Leadership Academy Class of 2019.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Jabari Higgs",
-          "slug": "jabari-higgs",
-          "photo": "/assets/img/beaux/profiles/2019/jabari-higgs.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/jabari-higgs.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/jabari-higgs.jpg",
-          "alt": "Professional headshot of Jabari Higgs, Beautillion Leadership Academy Class of 2019.",
-          "profile_type": "photo_only"
-        },
-        {
           "name": "Javon Gordon",
           "slug": "javon-gordon",
           "photo": "/assets/img/beaux/profiles/2019/javon-gordon.webp",
@@ -884,21 +875,12 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Jayaire King",
-          "slug": "jayaire-king",
-          "photo": "/assets/img/beaux/profiles/2019/jayaire-king.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/jayaire-king.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/jayaire-king.jpg",
-          "alt": "Professional headshot of Jayaire King, Beautillion Leadership Academy Class of 2019.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Joseph Barr",
-          "slug": "joseph-barr",
-          "photo": "/assets/img/beaux/profiles/2019/joseph-barr.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/joseph-barr.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/joseph-barr.jpg",
-          "alt": "Professional headshot of Joseph Barr, Beautillion Leadership Academy Class of 2019.",
+          "name": "Jabari Higgs",
+          "slug": "jabari-higgs",
+          "photo": "/assets/img/beaux/profiles/2019/jabari-higgs.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/jabari-higgs.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/jabari-higgs.jpg",
+          "alt": "Professional headshot of Jabari Higgs, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
@@ -920,48 +902,39 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Myles Williams",
-          "slug": "myles-williams",
-          "photo": "/assets/img/beaux/profiles/2019/myles-williams.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/myles-williams.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/myles-williams.jpg",
-          "alt": "Professional headshot of Myles Williams, Beautillion Leadership Academy Class of 2019.",
+          "name": "Tyler Jackson",
+          "slug": "tyler-jackson",
+          "photo": "/assets/img/beaux/profiles/2019/tyler-jackson.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/tyler-jackson.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/tyler-jackson.jpg",
+          "alt": "Professional headshot of Tyler Jackson, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
-          "name": "Nadir Daniels",
-          "slug": "nadir-daniels",
-          "photo": "/assets/img/beaux/profiles/2019/nadir-daniels.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/nadir-daniels.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/nadir-daniels.jpg",
-          "alt": "Professional headshot of Nadir Daniels, Beautillion Leadership Academy Class of 2019.",
+          "name": "Cameron Kee",
+          "slug": "cameron-kee",
+          "photo": "/assets/img/beaux/profiles/2019/cameron-kee.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/cameron-kee.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/cameron-kee.jpg",
+          "alt": "Professional headshot of Cameron Kee, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
-          "name": "Samuel Walker",
-          "slug": "samuel-walker",
-          "photo": "/assets/img/beaux/profiles/2019/samuel-walker.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/samuel-walker.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/samuel-walker.jpg",
-          "alt": "Professional headshot of Samuel Walker, Beautillion Leadership Academy Class of 2019.",
+          "name": "Jayaire King",
+          "slug": "jayaire-king",
+          "photo": "/assets/img/beaux/profiles/2019/jayaire-king.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/jayaire-king.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/jayaire-king.jpg",
+          "alt": "Professional headshot of Jayaire King, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
-          "name": "Shemar Bookman",
-          "slug": "shemar-bookman",
-          "photo": "/assets/img/beaux/profiles/2019/shemar-bookman.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/shemar-bookman.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/shemar-bookman.jpg",
-          "alt": "Professional headshot of Shemar Bookman, Beautillion Leadership Academy Class of 2019.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Sidney Riley",
-          "slug": "sidney-riley",
-          "photo": "/assets/img/beaux/profiles/2019/sidney-riley.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/sidney-riley.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/sidney-riley.jpg",
-          "alt": "Professional headshot of Sidney Riley, Beautillion Leadership Academy Class of 2019.",
+          "name": "Emmanuel Lewis",
+          "slug": "emmanuel-lewis",
+          "photo": "/assets/img/beaux/profiles/2019/emmanuel-lewis.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/emmanuel-lewis.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/emmanuel-lewis.jpg",
+          "alt": "Professional headshot of Emmanuel Lewis, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
@@ -974,21 +947,30 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Tyiler Aponte",
-          "slug": "tyiler-aponte",
-          "photo": "/assets/img/beaux/profiles/2019/tyiler-aponte.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/tyiler-aponte.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/tyiler-aponte.jpg",
-          "alt": "Professional headshot of Tyiler Aponte, Beautillion Leadership Academy Class of 2019.",
+          "name": "Sidney Riley",
+          "slug": "sidney-riley",
+          "photo": "/assets/img/beaux/profiles/2019/sidney-riley.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/sidney-riley.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/sidney-riley.jpg",
+          "alt": "Professional headshot of Sidney Riley, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
-          "name": "Tyler Jackson",
-          "slug": "tyler-jackson",
-          "photo": "/assets/img/beaux/profiles/2019/tyler-jackson.webp",
-          "card_photo": "/assets/img/beaux/cards/2019/tyler-jackson.webp",
-          "original_photo": "/assets/img/beaux/originals/2019/tyler-jackson.jpg",
-          "alt": "Professional headshot of Tyler Jackson, Beautillion Leadership Academy Class of 2019.",
+          "name": "Charles Solomon",
+          "slug": "charles-solomon",
+          "photo": "/assets/img/beaux/profiles/2019/charles-solomon.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/charles-solomon.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/charles-solomon.jpg",
+          "alt": "Professional headshot of Charles Solomon, Beautillion Leadership Academy Class of 2019.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Damascus Thomas",
+          "slug": "damascus-thomas",
+          "photo": "/assets/img/beaux/profiles/2019/damascus-thomas.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/damascus-thomas.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/damascus-thomas.jpg",
+          "alt": "Professional headshot of Damascus Thomas, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         },
         {
@@ -998,6 +980,24 @@
           "card_photo": "/assets/img/beaux/cards/2019/tyler-tinsley.webp",
           "original_photo": "/assets/img/beaux/originals/2019/tyler-tinsley.jpg",
           "alt": "Professional headshot of Tyler Tinsley, Beautillion Leadership Academy Class of 2019.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Samuel Walker",
+          "slug": "samuel-walker",
+          "photo": "/assets/img/beaux/profiles/2019/samuel-walker.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/samuel-walker.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/samuel-walker.jpg",
+          "alt": "Professional headshot of Samuel Walker, Beautillion Leadership Academy Class of 2019.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Myles Williams",
+          "slug": "myles-williams",
+          "photo": "/assets/img/beaux/profiles/2019/myles-williams.webp",
+          "card_photo": "/assets/img/beaux/cards/2019/myles-williams.webp",
+          "original_photo": "/assets/img/beaux/originals/2019/myles-williams.jpg",
+          "alt": "Professional headshot of Myles Williams, Beautillion Leadership Academy Class of 2019.",
           "profile_type": "photo_only"
         }
       ]
@@ -1011,30 +1011,12 @@
       "full_page": false,
       "participants": [
         {
-          "name": "Arthur Stone",
-          "slug": "arthur-stone",
-          "photo": "/assets/img/beaux/profiles/2021/arthur-stone.webp",
-          "card_photo": "/assets/img/beaux/cards/2021/arthur-stone.webp",
-          "original_photo": "/assets/img/beaux/originals/2021/arthur-stone.jpg",
-          "alt": "Professional headshot of Arthur Stone, Beautillion Leadership Academy Class of 2021.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Bryson Purnell",
-          "slug": "bryson-purnell",
-          "photo": "/assets/img/beaux/profiles/2021/bryson-purnell.webp",
-          "card_photo": "/assets/img/beaux/cards/2021/bryson-purnell.webp",
-          "original_photo": "/assets/img/beaux/originals/2021/bryson-purnell.jpg",
-          "alt": "Professional headshot of Bryson Purnell, Beautillion Leadership Academy Class of 2021.",
-          "profile_type": "photo_only"
-        },
-        {
-          "name": "Christian Solomon",
-          "slug": "christian-solomon",
-          "photo": "/assets/img/beaux/profiles/2021/christian-solomon.webp",
-          "card_photo": "/assets/img/beaux/cards/2021/christian-solomon.webp",
-          "original_photo": "/assets/img/beaux/originals/2021/christian-solomon.jpg",
-          "alt": "Professional headshot of Christian Solomon, Beautillion Leadership Academy Class of 2021.",
+          "name": "Miles Allen",
+          "slug": "miles-allen",
+          "photo": "/assets/img/beaux/profiles/2021/miles-allen.webp",
+          "card_photo": "/assets/img/beaux/cards/2021/miles-allen.webp",
+          "original_photo": "/assets/img/beaux/originals/2021/miles-allen.jpg",
+          "alt": "Professional headshot of Miles Allen, Beautillion Leadership Academy Class of 2021.",
           "profile_type": "photo_only"
         },
         {
@@ -1056,12 +1038,30 @@
           "profile_type": "photo_only"
         },
         {
-          "name": "Miles Allen",
-          "slug": "miles-allen",
-          "photo": "/assets/img/beaux/profiles/2021/miles-allen.webp",
-          "card_photo": "/assets/img/beaux/cards/2021/miles-allen.webp",
-          "original_photo": "/assets/img/beaux/originals/2021/miles-allen.jpg",
-          "alt": "Professional headshot of Miles Allen, Beautillion Leadership Academy Class of 2021.",
+          "name": "Bryson Purnell",
+          "slug": "bryson-purnell",
+          "photo": "/assets/img/beaux/profiles/2021/bryson-purnell.webp",
+          "card_photo": "/assets/img/beaux/cards/2021/bryson-purnell.webp",
+          "original_photo": "/assets/img/beaux/originals/2021/bryson-purnell.jpg",
+          "alt": "Professional headshot of Bryson Purnell, Beautillion Leadership Academy Class of 2021.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Christian Solomon",
+          "slug": "christian-solomon",
+          "photo": "/assets/img/beaux/profiles/2021/christian-solomon.webp",
+          "card_photo": "/assets/img/beaux/cards/2021/christian-solomon.webp",
+          "original_photo": "/assets/img/beaux/originals/2021/christian-solomon.jpg",
+          "alt": "Professional headshot of Christian Solomon, Beautillion Leadership Academy Class of 2021.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Arthur Stone",
+          "slug": "arthur-stone",
+          "photo": "/assets/img/beaux/profiles/2021/arthur-stone.webp",
+          "card_photo": "/assets/img/beaux/cards/2021/arthur-stone.webp",
+          "original_photo": "/assets/img/beaux/originals/2021/arthur-stone.jpg",
+          "alt": "Professional headshot of Arthur Stone, Beautillion Leadership Academy Class of 2021.",
           "profile_type": "photo_only"
         },
         {
