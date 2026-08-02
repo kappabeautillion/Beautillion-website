@@ -142,12 +142,12 @@ h1.display { font-size: clamp(2.6rem, 6vw, 5rem); }
 @media (min-width: 560px) { .brand-text .tag { display: block; } }
 
 .main-nav { display: none; }
-.main-nav ul { display: flex; align-items: center; gap: 20px; }
+.main-nav ul { display: flex; align-items: center; gap: 15px; }
 .main-nav a {
   color: var(--white);
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   padding-bottom: 6px;
   border-bottom: 1px solid transparent;
@@ -584,3 +584,131 @@ h1.display { font-size: clamp(2.6rem, 6vw, 5rem); }
   line-height: 1.5;
   margin: 0 0 4px;
 }
+
+
+/* =========================================================
+   THE LEADERSHIP ACADEMY PAGE COMPONENTS
+   ========================================================= */
+
+.section--white { background: var(--white); }
+
+/* Leadership Pillars — hover-expand cards */
+.pillar-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (min-width: 720px) { .pillar-grid { grid-template-columns: repeat(4, 1fr); } }
+.lp-card {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: var(--black);
+}
+.lp-card .ph-photo { width: 100%; height: 100%; }
+.lp-card .lp-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,0) 40%, rgba(10,10,10,0.92) 100%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 18px;
+  color: var(--white);
+}
+.lp-card .lp-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  border-top: 2px solid var(--gold);
+  padding-top: 10px;
+}
+.lp-card .lp-desc {
+  font-size: 0.85rem;
+  color: var(--gray-300);
+  margin: 10px 0 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s var(--ease), opacity 0.3s var(--ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .lp-card .lp-desc { max-height: 0; }
+  .lp-card:hover .lp-desc { max-height: 140px; opacity: 1; }
+  .lp-card:hover .lp-overlay { background: linear-gradient(180deg, rgba(10,10,10,0.15) 0%, rgba(10,10,10,0.95) 55%); }
+}
+@media not all and (hover: hover) {
+  .lp-card .lp-desc { max-height: none; opacity: 1; }
+}
+
+/* Alternating experience rows (magazine layout) */
+.experience-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.experience-row:last-child { border-bottom: none; }
+@media (min-width: 860px) {
+  .experience-row { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .experience-row.reverse .experience-media { order: 2; }
+  .experience-row.reverse .experience-copy { order: 1; }
+}
+.experience-media .ph-photo { aspect-ratio: 4/3; }
+.experience-copy .eyebrow { color: var(--gold); }
+.experience-copy .eyebrow::before { background: var(--gold); }
+
+/* What Participants Gain — word grid on black */
+.gains-grid {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;
+}
+.gains-grid span {
+  border: 1px solid var(--gold);
+  color: var(--gold-soft);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  padding: 12px 22px;
+  border-radius: 999px;
+}
+
+/* Voices carousel */
+.voices-carousel { position: relative; max-width: 760px; margin: 0 auto; min-height: 220px; }
+.voice-slide {
+  position: absolute; inset: 0;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.6s var(--ease);
+  text-align: center;
+}
+.voice-slide.is-active { opacity: 1; pointer-events: auto; position: relative; }
+.voices-dots { display: flex; justify-content: center; gap: 10px; margin-top: 28px; }
+.voices-dots button {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--gray-300); border: none; padding: 0;
+}
+.voices-dots button.is-active { background: var(--burgundy); }
+
+
+/* =========================================================
+   THE BEAUTILLION EXPERIENCE PAGE COMPONENTS
+   ========================================================= */
+
+.moments-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+@media (min-width: 860px) { .moments-grid { grid-template-columns: repeat(5, 1fr); } }
+.moment-item .ph-photo { aspect-ratio: 3/4; }
+.moment-caption {
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-top: 12px;
+}
+
+.quote-wall { display: grid; gap: 32px; }
+@media (min-width: 720px) { .quote-wall { grid-template-columns: repeat(2, 1fr); } }
+.quote-wall-item { text-align: center; padding: 10px 18px; }
+.quote-wall-item .mark { font-family: var(--font-display); color: var(--gold); font-size: 2rem; display: block; margin-bottom: 6px; }
+.quote-wall-item p { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; color: var(--ink); margin: 0; }
+
+.outcome-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+@media (min-width: 720px) { .outcome-strip { grid-template-columns: repeat(4, 1fr); } }
+.outcome-item { text-align: center; }
+.outcome-item .value-icon { border-color: var(--gold); }
+.outcome-item h3 { font-size: 1rem; margin: 6px 0 6px; }
+.outcome-item p { font-size: 0.85rem; }

@@ -15,11 +15,18 @@
     "out": "our-story/index.html"
   },
   {
-    "title": "The Program | Beautillion Leadership Academy",
-    "description": "A rigorous, year-long curriculum in leadership, etiquette, financial literacy, community service, and scholarship.",
-    "fragment": "program.html",
+    "title": "The Leadership Academy | Beautillion Leadership Academy",
+    "description": "Where potential becomes purpose. A comprehensive leadership development experience in mentorship, education, experiential learning, and service.",
+    "fragment": "leadership-academy.html",
     "active": "PROGRAM",
-    "out": "program/index.html"
+    "out": "leadership-academy/index.html"
+  },
+  {
+    "title": "The Beautillion Experience | Beautillion Leadership Academy",
+    "description": "Every journey begins with potential. See what your son will actually experience in the Beautillion Leadership Academy.",
+    "fragment": "experience.html",
+    "active": "EXPERIENCE",
+    "out": "experience/index.html"
   },
   {
     "title": "Meet the Beaux | Beautillion Leadership Academy",

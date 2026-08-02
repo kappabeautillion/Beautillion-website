@@ -8,7 +8,7 @@ with open(os.path.join(BUILD, "header.html")) as f:
 with open(os.path.join(BUILD, "footer.html")) as f:
     FOOTER = f.read()
 
-ACTIVE_KEYS = ["HOME", "ABOUT", "PROGRAM", "BEAUX", "ALUMNI", "SPONSORS", "NEWS", "GALLERY"]
+ACTIVE_KEYS = ["HOME", "ABOUT", "PROGRAM", "EXPERIENCE", "BEAUX", "ALUMNI", "SPONSORS", "NEWS", "GALLERY"]
 
 def render_header(active_key):
     html = HEADER_TPL
