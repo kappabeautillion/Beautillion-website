@@ -1,0 +1,80 @@
+{
+  "eligibility": {
+    "grade_levels": "9th – 11th grade",
+    "graduating_classes": "Classes of 2027, 2028, and 2029",
+    "geographic_eligibility": "Open to families residing in the greater Burlington–Camden area",
+    "minimum_academic": "A minimum cumulative GPA of 2.5, or as approved by the selection committee",
+    "application_deadline": "October 15, 2026",
+    "interview_period": "Late October through mid-November 2026",
+    "program_start": "January 2027",
+    "program_end": "June 2027"
+  },
+
+  "requirements": [
+    "Be enrolled as an eligible high-school student.",
+    "Demonstrate conduct consistent with the Academy's values.",
+    "Complete an interview with the selection committee.",
+    "Submit a current academic transcript.",
+    "Commit to the required Academy sessions and activities.",
+    "Participate in community service, professional-development, cultural, and leadership experiences.",
+    "Obtain parent or guardian support and authorization."
+  ],
+
+  "essays": [
+    {
+      "id": "essay_leadership",
+      "label": "Leadership",
+      "prompt": "Describe a time when you demonstrated leadership, whether or not you held a formal title. What did you learn from the experience?",
+      "limit": 250
+    },
+    {
+      "id": "essay_growth",
+      "label": "Growth",
+      "prompt": "What is one area in which you hope to grow through the Beautillion Leadership Academy?",
+      "limit": 200
+    },
+    {
+      "id": "essay_service",
+      "label": "Service",
+      "prompt": "What does service to your community mean to you?",
+      "limit": 200
+    },
+    {
+      "id": "essay_future_vision",
+      "label": "Future Vision",
+      "prompt": "What do you hope to accomplish in college, your career, or your community during the next ten years?",
+      "limit": 250
+    },
+    {
+      "id": "essay_personal_perspective",
+      "label": "Personal Perspective",
+      "prompt": "What is something important about you that the selection committee would not learn from your grades or activity list?",
+      "limit": 200
+    }
+  ],
+
+  "applicant_acknowledgements": [
+    { "id": "ack_accuracy", "text": "I certify that the information provided in this application is accurate and complete to the best of my knowledge.", "required": true },
+    { "id": "ack_participation", "text": "I understand the participation expectations described on this page and am prepared to meet them.", "required": true },
+    { "id": "ack_interview", "text": "I understand that an interview with the selection committee is a required part of the application process.", "required": true },
+    { "id": "ack_attendance", "text": "I commit to attending the required Academy sessions and activities to the best of my ability.", "required": true },
+    { "id": "ack_conduct", "text": "I agree to conduct myself in a manner consistent with the Academy's code of conduct throughout the application and program.", "required": true }
+  ],
+
+  "guardian_acknowledgements": [
+    { "id": "ack_g_accuracy", "text": "I certify that the information I have provided in this application is accurate and complete to the best of my knowledge.", "required": true },
+    { "id": "ack_g_contact", "text": "I give the Academy permission to contact me and my student regarding this application by email, phone, or text.", "required": true },
+    { "id": "ack_g_transcript", "text": "I understand a current academic transcript is required to complete this application.", "required": true },
+    { "id": "ack_g_support", "text": "I support my student's participation in the Beautillion Leadership Academy and will assist with attendance and required commitments.", "required": true },
+    { "id": "ack_g_privacy", "text": "I have reviewed the Academy's privacy notice regarding how application information is collected, used, and stored.", "required": true }
+  ],
+
+  "media_authorization": {
+    "text": "I authorize the Beautillion Leadership Academy to photograph or record my student during Academy activities and to use those images or recordings in Academy publications, the website, and promotional materials. This authorization is separate from the application itself and may be declined without affecting the application.",
+    "required": false
+  },
+
+  "requirements_notice": "Participation expectations, attendance requirements, fundraising responsibilities, scholarship criteria, gala obligations, and participant costs may vary by Academy class. Current requirements will be provided before enrollment and must be acknowledged by the participant and parent or guardian.",
+
+  "profile_notice": "Information you provide here — such as hometown — helps us prepare a potential public profile if you're accepted, but nothing is published just because it appears on this application. The Academy will confirm any public-facing content with your family before it's shared."
+}

@@ -34,7 +34,7 @@
           <li><a href="/experience/" class="">Experience</a></li>
           <li><a href="/beaux/" class="">Beaux</a></li>
           <li><a href="/alumni/" class="">Alumni</a></li>
-          <li><a href="/sponsors/" class="active">Sponsors</a></li>
+          <li><a href="/sponsors/" class="active">Support the Academy</a></li>
           <li><a href="/news/" class="">News</a></li>
           <li><a href="/gallery/" class="">Gallery</a></li>
         </ul>
@@ -54,7 +54,7 @@
       <li><a href="/experience/">Experience</a></li>
       <li><a href="/beaux/">Beaux</a></li>
       <li><a href="/alumni/">Alumni</a></li>
-      <li><a href="/sponsors/">Sponsors</a></li>
+      <li><a href="/sponsors/">Support the Academy</a></li>
       <li><a href="/news/">News</a></li>
       <li><a href="/gallery/">Gallery</a></li>
     </ul>
@@ -68,42 +68,182 @@
 
 <main id="main">
   <section class="hero hero--page">
-    <div class="hero-media"><div class="ph-photo"><span>Sponsors Hero Photo — Presentation Ceremony or Check Presentation</span></div></div>
+    <div class="hero-media"><div class="ph-photo"><span>Support Hero Photo — Souvenir Journal or Gala Presentation Moment</span></div></div>
     <div class="container">
       <div class="hero-content" data-reveal>
-        <span class="eyebrow">With Gratitude</span>
-        <h1 class="display">Sponsors &amp; Partners</h1>
-        <p class="lede">None of this is possible without the generosity of the individuals, families, and organizations who invest in our Beaux.</p>
+        <span class="eyebrow">Support the Academy</span>
+        <h1 class="display">Invest in Tomorrow's Leaders</h1>
+        <p class="lede">Every Souvenir Journal ad and sponsorship directly funds the scholarships, leadership sessions, and gala experience that shape our Beaux. Choose a level below to get started.</p>
+        <div class="hero-cta-row"><a href="#support-form" class="btn btn-primary">Become a Sponsor</a></div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container" id="sponsor-tiers" data-reveal></div>
+  <section class="section section--white" id="support-form">
+    <div class="container">
+      <div id="support-banner" class="support-banner">
+        <span>You're supporting <strong id="support-banner-name"></strong>'s Beautillion journey.</span>
+        <a href="#" id="support-banner-clear">Not who you meant? Clear</a>
+      </div>
+
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow">Sponsorship Levels</span>
+        <h2 class="display">Choose Your Level of Support</h2>
+        <p style="max-width:640px; margin:0 auto;">All sponsorships include recognition in the Souvenir Journal distributed at the gala. Select a tier to begin your sponsorship — you can adjust it below before submitting.</p>
+      </div>
+
+      <form id="support-form-el" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="tier-grid" id="tier-grid" data-reveal>
+        <label class="tier-card" data-tier="Bronze" data-amount="50" for="tier-bronze">
+          <input type="radio" name="tier" value="Bronze — $50" id="tier-bronze" required />
+          <span class="tier-name">Bronze</span>
+          <span class="tier-price">$50</span>
+          <ul>
+            <li>Name listing in the Souvenir Journal</li>
+            <li>Placement in the Bronze section</li>
+          </ul>
+          <span class="tier-select-btn">Select Bronze</span>
+        </label>
+
+        <label class="tier-card" data-tier="Silver" data-amount="100" for="tier-silver">
+          <input type="radio" name="tier" value="Silver — $100" id="tier-silver" />
+          <span class="tier-name">Silver</span>
+          <span class="tier-price">$100</span>
+          <ul>
+            <li>Half-page advertisement</li>
+            <li>Placement in the Souvenir Journal</li>
+          </ul>
+          <span class="tier-select-btn">Select Silver</span>
+        </label>
+
+        <label class="tier-card" data-tier="Gold" data-amount="250" for="tier-gold">
+          <input type="radio" name="tier" value="Gold — $250" id="tier-gold" />
+          <span class="tier-name">Gold</span>
+          <span class="tier-price">$250</span>
+          <ul>
+            <li>Full-color advertisement</li>
+            <li>Center-section placement</li>
+          </ul>
+          <span class="tier-select-btn">Select Gold</span>
+        </label>
+
+        <label class="tier-card tier-card--diamond" data-tier="Diamond" data-amount="1000" for="tier-diamond">
+          <input type="radio" name="tier" value="Diamond — $1,000" id="tier-diamond" />
+          <span class="tier-name">Diamond</span>
+          <span class="tier-price">$1,000</span>
+          <ul>
+            <li>Premium full-color ad on the Inside Front Cover, Inside Back Cover, or Outside Back Cover</li>
+            <li>Two complimentary gala tickets</li>
+            <li>Recognition from the stage at the gala</li>
+          </ul>
+          <span class="tier-select-btn">Select Diamond</span>
+        </label>
+      </div>
+      <p class="tier-note">Diamond cover placements (Inside Front Cover, Inside Back Cover, Outside Back Cover) are reserved first-come, first-served. We'll confirm your specific cover placement — or offer a waiting-list spot if all three are taken — when we follow up.</p>
+
+      <div class="form-card" style="margin-top:48px; max-width:760px; margin-left:auto; margin-right:auto;" data-reveal>
+        <h3 style="margin-bottom:6px;">Sponsor Information</h3>
+        <p style="font-size:0.9rem; margin-bottom:8px;">All fields marked * are required.</p>
+
+        <div class="form-step-label">Your Information</div>
+        <div class="form-row cols-2">
+          <div class="field"><label for="f-name">Individual or Company Name *</label><input id="f-name" name="sponsor_name" type="text" required /></div>
+          <div class="field"><label for="f-rep">Company Representative</label><input id="f-rep" name="representative" type="text" /></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="f-address">Street Address *</label><input id="f-address" name="address" type="text" required /></div>
+        </div>
+        <div class="form-row cols-2">
+          <div class="field"><label for="f-city">City *</label><input id="f-city" name="city" type="text" required /></div>
+          <div class="field">
+            <div class="form-row cols-2" style="margin-bottom:0;">
+              <div class="field"><label for="f-state">State *</label><input id="f-state" name="state" type="text" required /></div>
+              <div class="field"><label for="f-zip">ZIP *</label><input id="f-zip" name="zip" type="text" required /></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row cols-2">
+          <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required /></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" /></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="f-website">Website</label><input id="f-website" name="website" type="url" placeholder="https://" /></div>
+        </div>
+
+        <div class="form-step-label">Your Sponsorship</div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-for">Advertisement in Support of</label>
+            <input id="f-for" name="advertisement_in_support_of" type="text" placeholder="Beau's full name (leave blank for a general Academy gift)" />
+            <p class="field-hint">Pre-filled automatically when you arrive here from a Beau's profile page.</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="f-instructions">Special Instructions</label><textarea id="f-instructions" name="special_instructions" placeholder="Anything else we should know about your ad, placement, or recognition"></textarea></div>
+        </div>
+
+        <div class="form-step-label">Advertisement Artwork</div>
+        <div class="form-row">
+          <div class="field">
+            <div class="upload-dropzone" id="upload-dropzone" tabindex="0" role="button" aria-label="Upload advertisement artwork">
+              <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15V4M12 4l-4 4M12 4l4 4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+              <p><span class="upload-cta">Click to upload</span> or drag and drop your artwork here</p>
+              <p style="margin-top:6px;">PDF, JPEG, PNG, or Word — up to 25MB</p>
+            </div>
+            <input type="file" id="f-artwork" name="artwork" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" hidden />
+            <div id="file-chip-holder"></div>
+            <p class="upload-error" id="upload-error"></p>
+            <div class="checkbox-field">
+              <input type="checkbox" id="f-later" name="artwork_later" value="yes" />
+              <label for="f-later">I will submit my artwork later</label>
+            </div>
+            <p class="field-hint" id="artwork-deadline-note" style="display:none;">No problem — please email your final, camera-ready artwork to <a href="mailto:kappabeautillion@gmail.com" style="color:var(--burgundy);">kappabeautillion@gmail.com</a> no later than the artwork deadline noted in your confirmation email. <em>(Committee: update this deadline each program year.)</em></p>
+          </div>
+        </div>
+
+        <div class="form-step-label">Payment Method</div>
+        <div class="form-row">
+          <div class="payment-methods">
+            <div class="payment-method">
+              <input type="radio" name="payment_method" value="Credit Card" id="pay-credit" required />
+              <label for="pay-credit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M2.5 9.5h19"/></svg>Credit Card</label>
+            </div>
+            <div class="payment-method">
+              <input type="radio" name="payment_method" value="Debit Card" id="pay-debit" />
+              <label for="pay-debit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M2.5 9.5h19"/><path d="M6 15h4"/></svg>Debit Card</label>
+            </div>
+            <div class="payment-method">
+              <input type="radio" name="payment_method" value="PayPal" id="pay-paypal" />
+              <label for="pay-paypal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 5h7a4 4 0 0 1 0 8H9l-1 6H5l2.5-14z"/></svg>PayPal</label>
+            </div>
+          </div>
+          <p class="field-hint">Your payment method preference lets us send the right secure checkout link. We never collect or store card numbers on this page.</p>
+        </div>
+
+        <input type="hidden" name="tier_selected" id="f-tier-hidden" />
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:10px;">Submit Sponsorship</button>
+        <p class="form-note" id="support-form-note">You'll receive an emailed confirmation, and our committee will follow up with a secure payment link and receipt.</p>
+      </div>
+      </form>
+    </div>
   </section>
 
   <section class="section section--champagne">
     <div class="container">
       <div class="section-head section-head--center" data-reveal>
-        <span class="eyebrow">Become a Sponsor</span>
-        <h2 class="display">Sponsorship Levels</h2>
+        <span class="eyebrow">With Gratitude</span>
+        <h2 class="display">Our Sponsors</h2>
       </div>
-      <div class="grid grid-4">
-        <div class="pillar" data-reveal><span class="index">Presenting</span><h3>$10,000+</h3><p>Top billing across all materials, speaking opportunity at the ceremony, and a dedicated scholarship named in your honor.</p></div>
-        <div class="pillar" data-reveal><span class="index">Platinum</span><h3>$5,000+</h3><p>Prominent logo placement, VIP seating for four at the ceremony, and recognition across the website and program booklet.</p></div>
-        <div class="pillar" data-reveal><span class="index">Gold</span><h3>$2,500+</h3><p>Logo placement on the website and program booklet, plus two tickets to the ceremony.</p></div>
-        <div class="pillar" data-reveal><span class="index">Partner</span><h3>$500+</h3><p>Name recognition on the website and program booklet as a Community Partner.</p></div>
-      </div>
-      <p style="text-align:center; color:var(--gray-500); font-size:0.85rem; margin-top:24px;">Committee note: adjust these giving levels and benefits to match your chapter's actual sponsorship packet.</p>
+      <div class="container" id="sponsor-tiers" data-reveal></div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="container" data-reveal>
-      <span class="eyebrow" style="justify-content:center;">Partner With Us</span>
-      <h2 class="display">Invest in the Next Generation of Leaders</h2>
+      <span class="eyebrow" style="justify-content:center;">Questions About Sponsoring?</span>
+      <h2 class="display">We're Happy to Help</h2>
       <div class="btn-row">
-        <a href="mailto:info@kappabeautillion.com" class="btn btn-primary">Become a Sponsor</a>
+        <a href="mailto:kappabeautillion@gmail.com" class="btn btn-primary">Email the Committee</a>
       </div>
     </div>
   </section>
@@ -151,7 +291,7 @@
         <div>
           <h5>More</h5>
           <ul>
-            <li><a href="/sponsors/">Sponsors &amp; Partners</a></li>
+            <li><a href="/sponsors/">Support the Academy</a></li>
             <li><a href="/news/">News &amp; Updates</a></li>
             <li><a href="/gallery/">Gallery</a></li>
             <li><a href="/apply/">Apply</a></li>

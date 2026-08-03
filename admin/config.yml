@@ -42,6 +42,68 @@ collections:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Paragraph", name: "body", widget: "text" }
 
+  - name: "apply"
+    label: "Apply Page"
+    files:
+      - file: "content/apply.json"
+        label: "Apply Page"
+        name: "apply"
+        fields:
+          - label: "Eligibility Details"
+            name: "eligibility"
+            widget: "object"
+            hint: "Shown in the quick-facts strip on the Apply page."
+            fields:
+              - { label: "Eligible Grade Levels", name: "grade_levels", widget: "string" }
+              - { label: "Eligible Graduating Classes", name: "graduating_classes", widget: "string" }
+              - { label: "Geographic Eligibility", name: "geographic_eligibility", widget: "string", required: false }
+              - { label: "Minimum Academic Expectation", name: "minimum_academic", widget: "string", required: false }
+              - { label: "Application Deadline", name: "application_deadline", widget: "string" }
+              - { label: "Interview Period", name: "interview_period", widget: "string" }
+              - { label: "Program Start", name: "program_start", widget: "string" }
+              - { label: "Program End", name: "program_end", widget: "string" }
+          - label: "Eligibility Checklist"
+            name: "requirements"
+            widget: "list"
+            hint: "One requirement per line."
+          - label: "Notice — Requirements May Vary by Class"
+            name: "requirements_notice"
+            widget: "text"
+          - label: "Notice — Public Profile Information"
+            name: "profile_notice"
+            widget: "text"
+          - label: "Applicant Short-Response Prompts"
+            name: "essays"
+            widget: "list"
+            summary: "{{label}} ({{limit}} words)"
+            fields:
+              - { label: "ID (no spaces, do not change once applicants start applying)", name: "id", widget: "string" }
+              - { label: "Prompt Label", name: "label", widget: "string" }
+              - { label: "Prompt", name: "prompt", widget: "text" }
+              - { label: "Word Limit", name: "limit", widget: "number" }
+          - label: "Applicant Acknowledgements (Step 8)"
+            name: "applicant_acknowledgements"
+            widget: "list"
+            summary: "{{text}}"
+            fields:
+              - { label: "ID (no spaces, do not change once applicants start applying)", name: "id", widget: "string" }
+              - { label: "Acknowledgement Text", name: "text", widget: "text" }
+              - { label: "Required?", name: "required", widget: "boolean", default: true }
+          - label: "Parent/Guardian Acknowledgements (Step 8)"
+            name: "guardian_acknowledgements"
+            widget: "list"
+            summary: "{{text}}"
+            fields:
+              - { label: "ID (no spaces, do not change once applicants start applying)", name: "id", widget: "string" }
+              - { label: "Acknowledgement Text", name: "text", widget: "text" }
+              - { label: "Required?", name: "required", widget: "boolean", default: true }
+          - label: "Media Authorization (separate from acknowledgements)"
+            name: "media_authorization"
+            widget: "object"
+            fields:
+              - { label: "Authorization Text", name: "text", widget: "text" }
+              - { label: "Required?", name: "required", widget: "boolean", default: false }
+
   - name: "news"
     label: "News Posts"
     files:
@@ -64,30 +126,106 @@ collections:
               - { label: "Photo Description (shown until a photo is uploaded)", name: "image_label", widget: "string" }
 
   - name: "alumni"
-    label: "Alumni Page"
+    label: "Alumni — The Legacy Continues"
     files:
       - file: "content/alumni.json"
         label: "Alumni Page"
         name: "alumni"
         fields:
-          - label: "Featured Quote (shown on Home + Alumni page)"
-            name: "featured_quote"
-            widget: "object"
+          - label: "The Academy's Impact (animated counters)"
+            name: "impact_stats"
+            widget: "list"
+            summary: "{{label}}: {{value}}"
             fields:
-              - { label: "Quote", name: "quote", widget: "text" }
-              - { label: "Name / Class Year", name: "name", widget: "string" }
-              - { label: "Detail (e.g. current job)", name: "meta", widget: "string" }
-          - label: "Alumni Profiles"
+              - { label: "Number", name: "value", widget: "number" }
+              - { label: "Symbol Before the Number (e.g. $)", name: "prefix", widget: "string", required: false }
+              - { label: "Symbol After the Number (e.g. +, %, M+)", name: "suffix", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Featured Alumni"
             name: "alumni"
             widget: "list"
-            summary: "{{name}}"
+            summary: "{{name}} — Class of {{class_year}}"
+            hint: "Each alumnus gets their own page at /alumni/their-slug/. Set 'Feature on Homepage Spotlight' for only a handful at a time — those get the large magazine-style treatment; everyone else still gets a full profile page, reachable from the industry directory, milestones, and news."
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Class Year", name: "class_year", widget: "string" }
-              - { label: "Current Role", name: "current", widget: "string" }
-              - { label: "Their Story (a sentence or two)", name: "story", widget: "text" }
+              - { label: "Full Name", name: "name", widget: "string" }
+              - { label: "URL Slug (no spaces, e.g. john-smith)", name: "slug", widget: "string" }
+              - { label: "Academy Class Year", name: "class_year", widget: "string" }
+              - { label: "Academy Class Theme", name: "theme", widget: "string", hint: "e.g. Heirs to the Throne — should match the class's theme on the Beaux Legacy Archive." }
+              - { label: "Feature on Homepage Spotlight?", name: "featured", widget: "boolean", default: false }
+              - label: "Field / Industry"
+                name: "industry"
+                widget: "select"
+                options:
+                  - { label: "Law", value: "law" }
+                  - { label: "Medicine", value: "medicine" }
+                  - { label: "Public Service", value: "public-service" }
+                  - { label: "Education", value: "education" }
+                  - { label: "Business", value: "business" }
+                  - { label: "Technology", value: "technology" }
+                  - { label: "Engineering", value: "engineering" }
+                  - { label: "Military", value: "military" }
+                  - { label: "Arts", value: "arts" }
+                  - { label: "Athletics", value: "athletics" }
+              - { label: "Current Position", name: "current_position", widget: "string" }
+              - { label: "Employer", name: "employer", widget: "string", required: false }
+              - { label: "College", name: "college", widget: "string" }
+              - { label: "Graduate School", name: "grad_school", widget: "string", required: false }
+              - label: "Volunteer Status"
+                name: "volunteer_status"
+                widget: "select"
+                options: ["Active Mentor", "Occasional Volunteer", "Not Currently Involved"]
+              - { label: "Portrait", name: "photo", widget: "image", required: false }
+              - { label: "Portrait Description (shown until a photo is uploaded)", name: "photo_label", widget: "string" }
+              - { label: "Short Bio (one sentence, used in card previews)", name: "bio", widget: "text" }
+              - label: "Full Story (magazine-style, one paragraph per entry)"
+                name: "story"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Advice to Future Participants", name: "advice", widget: "text" }
+              - label: "Gallery"
+                name: "gallery"
+                widget: "list"
+                required: false
+                summary: "{{caption}}"
+                fields:
+                  - { label: "Photo", name: "image", widget: "image", required: false }
+                  - { label: "Caption", name: "caption", widget: "string", required: false }
+              - label: "Related News (must match a News Story's slug below)"
+                name: "related_news"
+                widget: "list"
+                required: false
+                field: { label: "News Story Slug", name: "slug", widget: "string" }
+
+          - label: "Milestones (life-after-the-Academy timeline)"
+            name: "milestones"
+            widget: "list"
+            summary: "{{label}} — {{alumni_slug}}"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Milestone Type", name: "label", widget: "string", hint: "e.g. College Graduation, Law School, Military Commission, Promotion, Entrepreneurship, Community Award, Published Author, Board Service, Family, Leadership Position" }
+              - { label: "Alumnus URL Slug", name: "alumni_slug", widget: "string", hint: "Must match a Featured Alumni entry's URL Slug above, to link this milestone to their profile." }
+              - { label: "Detail", name: "note", widget: "string" }
+
+          - label: "Alumni News"
+            name: "news"
+            widget: "list"
+            summary: "{{headline}}"
+            fields:
+              - { label: "News Story Slug (used by 'Related News' above)", name: "slug", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "Alumnus URL Slug", name: "alumni_slug", widget: "string", required: false, hint: "Must match a Featured Alumni entry's URL Slug above, to link this story to their profile." }
               - { label: "Photo", name: "image", widget: "image", required: false }
-              - { label: "Photo Description (shown until a photo is uploaded)", name: "photo_label", widget: "string" }
+
+          - label: "Advice to Future Participants (rotating quotes)"
+            name: "quotes"
+            widget: "list"
+            summary: "{{quote}}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Attribution (e.g. Class of 2015)", name: "attribution", widget: "string" }
 
   - name: "classes"
     label: "Beaux — Legacy Archive"
@@ -166,14 +304,15 @@ collections:
                   - { label: "Short Biography", name: "bio", widget: "text", required: false }
 
   - name: "sponsors"
-    label: "Sponsors Page"
+    label: "Sponsor Logo Wall"
     files:
       - file: "content/sponsors.json"
-        label: "Sponsors Page"
+        label: "Sponsor Logo Wall (on the Support the Academy page)"
         name: "sponsors"
         fields:
-          - label: "Sponsor Tiers"
+          - label: "Recognition Tiers"
             name: "tiers"
+            hint: "This only controls the 'Our Sponsors' logo wall lower on the Support the Academy page. The $50/$100/$250/$1,000 sponsorship levels and the sponsor form above it are fixed page content — ask Claude to change those."
             widget: "list"
             summary: "{{name}}"
             fields:

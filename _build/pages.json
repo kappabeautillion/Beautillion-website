@@ -5,7 +5,7 @@
     "fragment": "home.html",
     "active": "HOME",
     "out": "index.html",
-    "extra_scripts": "\n<script>\nBeautillion.loadContent('/content/home.json');\n\nfetch('/content/news.json').then(function(r){return r.json();}).then(function(data){\n  var posts = (data.posts || []).slice(0, 3);\n  Beautillion.renderList('#home-news-grid', posts, function(p){\n    return '<div class=\"card\" data-reveal>' +\n      '<div class=\"card-media\">' + Beautillion.mediaBlock(p.image, p.image_label, p.title) + '</div>' +\n      '<div class=\"card-body\"><span class=\"kicker\">' + p.category + '</span><h3>' + p.title + '</h3><p>' + p.excerpt + '</p>' +\n      '<a href=\"/news/#' + p.slug + '\" class=\"btn-text\">Read more <span class=\"arrow\">&rarr;</span></a></div></div>';\n  });\n}).catch(function(){});\n\nfetch('/content/sponsors.json').then(function(r){return r.json();}).then(function(data){\n  var top = [];\n  (data.tiers || []).forEach(function(t){ (t.sponsors||[]).forEach(function(s){ if (top.length < 8) top.push(s); }); });\n  Beautillion.renderList('#home-sponsor-grid', top, function(s){\n    return s.image ? ('<div class=\"sponsor-logo\"><img src=\"' + s.image + '\" alt=\"' + s.name + '\" style=\"max-width:100%; max-height:60px;\" /></div>') : ('<div class=\"sponsor-logo\">' + s.name + '</div>');\n  });\n}).catch(function(){});\n\nfetch('/content/alumni.json').then(function(r){return r.json();}).then(function(data){\n  var f = data.featured_quote;\n  if (!f) return;\n  var q = document.getElementById('home-alumni-quote');\n  var a = document.getElementById('home-alumni-attribution');\n  if (q) q.textContent = f.quote;\n  if (a) a.textContent = f.name + ' \u00b7 ' + f.meta;\n}).catch(function(){});\n</script>\n"
+    "extra_scripts": "\n<script>\nBeautillion.loadContent('/content/home.json');\n\nfetch('/content/news.json').then(function(r){return r.json();}).then(function(data){\n  var posts = (data.posts || []).slice(0, 3);\n  Beautillion.renderList('#home-news-grid', posts, function(p){\n    return '<div class=\"card\" data-reveal>' +\n      '<div class=\"card-media\">' + Beautillion.mediaBlock(p.image, p.image_label, p.title) + '</div>' +\n      '<div class=\"card-body\"><span class=\"kicker\">' + p.category + '</span><h3>' + p.title + '</h3><p>' + p.excerpt + '</p>' +\n      '<a href=\"/news/#' + p.slug + '\" class=\"btn-text\">Read more <span class=\"arrow\">&rarr;</span></a></div></div>';\n  });\n}).catch(function(){});\n\nfetch('/content/sponsors.json').then(function(r){return r.json();}).then(function(data){\n  var top = [];\n  (data.tiers || []).forEach(function(t){ (t.sponsors||[]).forEach(function(s){ if (top.length < 8) top.push(s); }); });\n  Beautillion.renderList('#home-sponsor-grid', top, function(s){\n    return s.image ? ('<div class=\"sponsor-logo\"><img src=\"' + s.image + '\" alt=\"' + s.name + '\" style=\"max-width:100%; max-height:60px;\" /></div>') : ('<div class=\"sponsor-logo\">' + s.name + '</div>');\n  });\n}).catch(function(){});\n\nfetch('/content/alumni.json').then(function(r){return r.json();}).then(function(data){\n  var f = (data.quotes || [])[0];\n  if (!f) return;\n  var q = document.getElementById('home-alumni-quote');\n  var a = document.getElementById('home-alumni-attribution');\n  if (q) q.textContent = f.quote;\n  if (a) a.textContent = f.attribution;\n}).catch(function(){});\n</script>\n"
   },
   {
     "title": "Our Story | Beautillion Leadership Academy",
@@ -29,13 +29,6 @@
     "out": "experience/index.html"
   },
   {
-    "title": "Alumni | Beautillion Leadership Academy",
-    "description": "Where they are now \u2014 the Academy's alumni network and the leaders it has produced.",
-    "fragment": "alumni.html",
-    "active": "ALUMNI",
-    "out": "alumni/index.html"
-  },
-  {
     "title": "Sponsors & Partners | Beautillion Leadership Academy",
     "description": "The individuals, families, and organizations whose partnership makes the Academy possible.",
     "fragment": "sponsors.html",
@@ -57,10 +50,11 @@
     "out": "gallery/index.html"
   },
   {
-    "title": "Apply | Beautillion Leadership Academy",
-    "description": "Begin your application to join the Beautillion Leadership Academy.",
+    "title": "Apply to the Academy | Beautillion Leadership Academy",
+    "description": "Your leadership journey begins here. Review eligibility and begin your application to the Beautillion Leadership Academy.",
     "fragment": "apply.html",
     "active": "",
-    "out": "apply/index.html"
+    "out": "apply/index.html",
+    "extra_scripts": "\n<script src=\"/assets/js/apply.js\"></script>\n"
   }
 ]

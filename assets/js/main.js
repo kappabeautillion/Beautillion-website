@@ -180,35 +180,167 @@
     });
   }
 
-  /* ---------- Apply form ---------- */
-  var applyForm = document.querySelector("#apply-form");
-  if (applyForm) {
-    applyForm.addEventListener("submit", function (e) {
-      var action = applyForm.getAttribute("action") || "";
+  /* ---------- Support the Academy / Sponsorship form ----------
+     Handles: tier-card selection, the "supporting [name]" deep link
+     from a Beau's profile page (?for=Name), the drag-and-drop artwork
+     uploader, and the "submit my artwork later" toggle. The form itself
+     still submits through the same progressive-enhancement Formspree
+     pattern as the Apply form below, since no payment/email backend
+     is wired up yet — see README.md, "Support the Academy — Next
+     Steps" for what real payment processing (Stripe Checkout) and the
+     two confirmation emails need before this goes fully live.
+  --------------------------------------------------------- */
+  var supportForm = document.querySelector("#support-form-el");
+  if (supportForm) {
+    // ----- Tier card selection -----
+    var tierCards = document.querySelectorAll(".tier-card");
+    var tierHidden = document.querySelector("#f-tier-hidden");
+    function syncTierCards() {
+      tierCards.forEach(function (card) {
+        var input = card.querySelector('input[type="radio"]');
+        card.classList.toggle("selected", !!(input && input.checked));
+      });
+    }
+    tierCards.forEach(function (card) {
+      var input = card.querySelector('input[type="radio"]');
+      if (!input) return;
+      input.addEventListener("change", function () {
+        if (tierHidden) tierHidden.value = card.getAttribute("data-tier") + " ($" + card.getAttribute("data-amount") + ")";
+        syncTierCards();
+      });
+    });
+
+    // ----- "Supporting [Name]" deep link from a Beau's profile page -----
+    var params = new URLSearchParams(window.location.search);
+    var forName = params.get("for");
+    var forField = document.querySelector("#f-for");
+    var banner = document.querySelector("#support-banner");
+    var bannerName = document.querySelector("#support-banner-name");
+    var bannerClear = document.querySelector("#support-banner-clear");
+    function showSupportBanner(name) {
+      if (forField) forField.value = name;
+      if (banner && bannerName) {
+        bannerName.textContent = name;
+        banner.classList.add("is-active");
+      }
+    }
+    if (forName) showSupportBanner(forName);
+    if (bannerClear) {
+      bannerClear.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (forField) forField.value = "";
+        if (banner) banner.classList.remove("is-active");
+        var url = new URL(window.location.href);
+        url.searchParams.delete("for");
+        window.history.replaceState({}, "", url);
+      });
+    }
+
+    // ----- Artwork drag-and-drop upload -----
+    var dropzone = document.querySelector("#upload-dropzone");
+    var fileInput = document.querySelector("#f-artwork");
+    var chipHolder = document.querySelector("#file-chip-holder");
+    var uploadError = document.querySelector("#upload-error");
+    var laterCheckbox = document.querySelector("#f-later");
+    var deadlineNote = document.querySelector("#artwork-deadline-note");
+    var ALLOWED_TYPES = [".pdf", ".jpg", ".jpeg", ".png", ".doc", ".docx"];
+    var MAX_BYTES = 25 * 1024 * 1024;
+
+    function showUploadError(msg) {
+      if (!uploadError) return;
+      uploadError.textContent = msg;
+      uploadError.classList.add("is-active");
+    }
+    function clearUploadError() {
+      if (!uploadError) return;
+      uploadError.textContent = "";
+      uploadError.classList.remove("is-active");
+    }
+    function formatBytes(bytes) {
+      return (bytes / (1024 * 1024)).toFixed(1) + " MB";
+    }
+    function renderChip(file) {
+      if (!chipHolder) return;
+      chipHolder.innerHTML =
+        '<div class="file-chip"><span>' + file.name + " (" + formatBytes(file.size) + ')</span><button type="button" class="file-chip-remove">Remove</button></div>';
+      var removeBtn = chipHolder.querySelector(".file-chip-remove");
+      if (removeBtn) {
+        removeBtn.addEventListener("click", function () {
+          fileInput.value = "";
+          chipHolder.innerHTML = "";
+        });
+      }
+    }
+    function handleFile(file) {
+      clearUploadError();
+      if (!file) return;
+      var ext = "." + file.name.split(".").pop().toLowerCase();
+      if (ALLOWED_TYPES.indexOf(ext) === -1) {
+        showUploadError("That file type isn't supported. Please upload a PDF, JPEG, PNG, or Word document.");
+        fileInput.value = "";
+        return;
+      }
+      if (file.size > MAX_BYTES) {
+        showUploadError("That file is larger than 25MB. Please upload a smaller file.");
+        fileInput.value = "";
+        return;
+      }
+      renderChip(file);
+    }
+    if (dropzone && fileInput) {
+      dropzone.addEventListener("click", function () { fileInput.click(); });
+      dropzone.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fileInput.click(); }
+      });
+      dropzone.addEventListener("dragover", function (e) { e.preventDefault(); dropzone.classList.add("dragover"); });
+      dropzone.addEventListener("dragleave", function () { dropzone.classList.remove("dragover"); });
+      dropzone.addEventListener("drop", function (e) {
+        e.preventDefault();
+        dropzone.classList.remove("dragover");
+        if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+          fileInput.files = e.dataTransfer.files;
+          handleFile(e.dataTransfer.files[0]);
+        }
+      });
+      fileInput.addEventListener("change", function () { handleFile(fileInput.files[0]); });
+    }
+    if (laterCheckbox) {
+      laterCheckbox.addEventListener("change", function () {
+        var later = laterCheckbox.checked;
+        if (dropzone) dropzone.classList.toggle("is-disabled", later);
+        if (fileInput) fileInput.disabled = later;
+        if (deadlineNote) deadlineNote.style.display = later ? "block" : "none";
+        if (later && chipHolder) chipHolder.innerHTML = "";
+        if (later) clearUploadError();
+      });
+    }
+
+    // ----- Submit (progressive enhancement, same pattern as Apply) -----
+    supportForm.addEventListener("submit", function (e) {
+      var action = supportForm.getAttribute("action") || "";
       var isConfigured = action.indexOf("formspree.io") > -1 && action.indexOf("YOUR_FORM_ID") === -1;
+      var note = document.querySelector("#support-form-note");
       if (!isConfigured) {
         e.preventDefault();
-        var note = document.querySelector("#apply-form-note");
         if (note) {
-          note.textContent = "Form endpoint not yet connected — see the README for the one-time Formspree setup step. Your entries are not being sent anywhere yet.";
+          note.textContent = "Sponsorship submissions aren't connected yet — see README.md, \"Support the Academy — Next Steps.\" Nothing you enter here is being sent or charged.";
           note.style.color = "#9c140e";
         }
         return;
       }
-      // Progressive enhancement: let Formspree receive it, but show inline success.
       e.preventDefault();
-      var data = new FormData(applyForm);
+      var data = new FormData(supportForm);
       fetch(action, { method: "POST", body: data, headers: { Accept: "application/json" } })
         .then(function (res) {
           if (res.ok) {
-            applyForm.innerHTML = '<div class="form-success"><h3>Application received</h3><p>Thank you for applying to the Beautillion Leadership Academy. Our committee will be in touch within two weeks regarding next steps.</p></div>';
+            supportForm.innerHTML =
+              '<div class="form-success"><h3>Sponsorship received</h3><p>Thank you for supporting the Beautillion Leadership Academy. You\'ll receive an emailed confirmation shortly, and our committee will follow up with a secure payment link within 1–2 business days.</p></div>';
           } else {
             throw new Error("submit-failed");
           }
         })
         .catch(function () {
-          var note = document.querySelector("#apply-form-note");
-          if (note) note.textContent = "Something went wrong submitting your application. Please email us directly so we don't miss you.";
+          if (note) note.textContent = "Something went wrong submitting your sponsorship. Please email us directly so we don't miss you.";
         });
     });
   }

@@ -1,41 +1,353 @@
 {
-  "featured_quote": {
-    "quote": "The Academy taught me how to walk into a room with confidence long before I ever had a resume to back it up.",
-    "name": "Class of 2014",
-    "meta": "Now a Civil Engineer"
-  },
+  "impact_stats": [
+    { "value": 250, "suffix": "+", "label": "Academy Graduates" },
+    { "value": 100, "suffix": "%", "label": "High School Graduation Rate" },
+    { "value": 2, "prefix": "$", "suffix": "M+", "label": "Scholarships Earned" },
+    { "value": 95, "suffix": "%", "label": "College Enrollment" },
+    { "value": 30, "suffix": "+", "label": "Mentors Giving Back" },
+    { "value": 18, "suffix": "", "label": "Career Fields Represented" },
+    { "value": 22, "suffix": "", "label": "Communities Served" },
+    { "value": 2500, "suffix": "+", "label": "Volunteer Hours" }
+  ],
+
   "alumni": [
     {
-      "name": "Marcus Bell",
-      "class_year": "2012",
-      "current": "Attorney, Bell & Ford LLP",
-      "story": "Marcus credits the Academy's public speaking workshops with giving him the confidence to pursue law school.",
-      "photo_label": "Marcus Bell Portrait",
-      "image": ""
-    },
-    {
-      "name": "Andre Simmons",
+      "name": "Marcus Johnson",
+      "slug": "marcus-johnson",
       "class_year": "2015",
-      "current": "M.D., Pediatric Resident",
-      "story": "Andre returned as a mentor for two consecutive classes after finishing medical school.",
-      "photo_label": "Andre Simmons Portrait",
-      "image": ""
+      "theme": "Heirs to the Throne",
+      "current_position": "Associate Attorney",
+      "employer": "Add Employer Name",
+      "college": "Howard University",
+      "grad_school": "Georgetown University Law Center",
+      "industry": "law",
+      "featured": true,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Marcus Johnson — Professional Portrait",
+      "bio": "Attorney, Howard University graduate, and returning mentor to current Beaux.",
+      "story": [
+        "Marcus Johnson walked into his first Academy session as a quiet fifteen-year-old who had never worn a tie. He left the program four years later having debated on a state stage, coordinated a canned-food drive that fed dozens of families, and decided — for the first time with real conviction — what he wanted his life to stand for.",
+        "\"The Academy didn't just teach me how to tie a bowtie,\" he says now. \"It taught me how to walk into a room I didn't feel ready for and stay anyway.\" That lesson carried him through Howard University and into Georgetown Law, where the same discipline the program instilled — show up prepared, listen before you speak, represent something larger than yourself — became the foundation of his legal career.",
+        "Today Marcus returns to the Academy each fall to run a mock-trial session for the newest class of Beaux. He credits the program's mentors with showing him what was possible before he could fully see it himself, and he's committed to doing the same for the next generation."
+      ],
+      "advice": "Don't wait until you feel ready. Show up, and let the room teach you the rest.",
+      "gallery": [],
+      "related_news": ["marcus-johnson-partner"]
     },
     {
-      "name": "Jalen Whitfield",
-      "class_year": "2017",
-      "current": "Software Engineer, Atlanta",
-      "story": "Jalen's Beautillion service project evolved into a nonprofit coding camp for middle schoolers.",
-      "photo_label": "Jalen Whitfield Portrait",
-      "image": ""
-    },
-    {
-      "name": "Terrence Boyd",
+      "name": "Dr. Jordan Wells",
+      "slug": "jordan-wells",
       "class_year": "2011",
-      "current": "Business Owner",
-      "story": "Terrence now sponsors two Beaux scholarships each year through his family's foundation.",
-      "photo_label": "Terrence Boyd Portrait",
+      "theme": "A Few Good Men",
+      "current_position": "Family Physician",
+      "employer": "Add Practice Name",
+      "college": "Morehouse College",
+      "grad_school": "Meharry Medical College",
+      "industry": "medicine",
+      "featured": true,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Dr. Jordan Wells — Professional Portrait",
+      "bio": "Family physician and Morehouse graduate who returned to open a practice in the same community that raised him.",
+      "story": [
+        "Growing up, Jordan Wells rarely saw a doctor who looked like him. During his Academy years, a community-service placement at a local clinic changed the direction of his life — he still remembers the moment a pediatrician there let him sit in on a well-child visit and explained, patiently, what she was doing and why.",
+        "\"That afternoon planted something,\" Jordan says. \"The Academy is what gave me the confidence to think a kid from my neighborhood could actually become that person.\" He carried that conviction through Morehouse College and Meharry Medical College, and after his residency, he made a deliberate choice to open his practice back in the community where he grew up.",
+        "Jordan now hosts an annual health-and-wellness session for current Beaux, walking them through basic health literacy and answering the same kinds of questions he once had no one to ask."
+      ],
+      "advice": "Find the moment that plants the seed, then protect it — it will carry you further than you expect.",
+      "gallery": [],
+      "related_news": ["jordan-wells-practice"]
+    },
+    {
+      "name": "Malik Anderson",
+      "slug": "malik-anderson",
+      "class_year": "2017",
+      "theme": "Young, Black & Gifted",
+      "current_position": "Senior Software Engineer",
+      "employer": "Add Employer Name",
+      "college": "Georgia Institute of Technology",
+      "grad_school": "",
+      "industry": "technology",
+      "featured": true,
+      "volunteer_status": "Occasional Volunteer",
+      "photo": "",
+      "photo_label": "Malik Anderson — Professional Portrait",
+      "bio": "Software engineer and Georgia Tech graduate building a coding workshop for current Beaux.",
+      "story": [
+        "Malik Anderson was the Beau who fixed the projector before every Academy session — not because anyone asked, but because he couldn't help himself. A mentor noticed, connected him with a summer coding camp, and by the time he graduated high school he'd already built his first app.",
+        "\"The Academy taught me that being the person who solves the quiet problem in the room is its own kind of leadership,\" he says. That mindset followed him to Georgia Tech and into a career building software used by thousands of people who will never know his name — which, he'll tell you, is exactly the point.",
+        "He's currently developing a beginner coding session he hopes to bring back to the Academy, so the next kid who can't stop fiddling with the equipment has somewhere to point that energy."
+      ],
+      "advice": "Leadership isn't always the loudest person in the room. Sometimes it's the one who quietly makes things work.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Xavier Brooks",
+      "slug": "xavier-brooks",
+      "class_year": "2009",
+      "theme": "The Year of the Gentleman",
+      "current_position": "City Councilman",
+      "employer": "Add District/Office Name",
+      "college": "Georgetown University",
+      "grad_school": "",
+      "industry": "public-service",
+      "featured": true,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Xavier Brooks — Professional Portrait",
+      "bio": "City councilman and Georgetown graduate from the Academy's earliest classes, now shaping policy in the community that raised him.",
+      "story": [
+        "As a member of one of the Academy's founding classes, Xavier Brooks didn't have many alumni to look up to — he was becoming the example he wished he'd had. The community-service requirement that once felt like an obligation became, over time, the thing he cared about most.",
+        "\"I learned that leadership is really just a decision to stay accountable to people who are counting on you,\" Xavier says. After Georgetown, he came home rather than staying away, eventually running for city council on a platform built around the same neighborhoods where his Academy service hours were logged years earlier.",
+        "He now sits on the program's advisory committee and makes it a point to attend as many gala ceremonies as his schedule allows, telling every new class that the Academy's real test comes long after the ceremony ends."
+      ],
+      "advice": "Go home. The place that raised you needs your leadership more than anywhere else will.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Isaiah Reed",
+      "slug": "isaiah-reed",
+      "class_year": "2013",
+      "theme": "A League of Extraordinary Gentlemen",
+      "current_position": "Naval Officer",
+      "employer": "United States Navy",
+      "college": "United States Naval Academy",
+      "grad_school": "",
+      "industry": "military",
+      "featured": false,
+      "volunteer_status": "Occasional Volunteer",
+      "photo": "",
+      "photo_label": "Isaiah Reed — Professional Portrait",
+      "bio": "Naval officer and U.S. Naval Academy graduate who credits the Academy's discipline for preparing him for military life.",
+      "story": [
+        "Isaiah Reed says the Academy's expectations around punctuality, bearing, and follow-through gave him a head start most of his Naval Academy classmates didn't have. He was commissioned as an officer in the U.S. Navy after graduation and has since served aboard multiple deployments."
+      ],
+      "advice": "Discipline in the small things is what makes you trustworthy with the big things.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Devin Price",
+      "slug": "devin-price",
+      "class_year": "2019",
+      "theme": "Men of Valor",
+      "current_position": "Head Coach & Athletic Director",
+      "employer": "Add School Name",
+      "college": "Hampton University",
+      "grad_school": "",
+      "industry": "athletics",
+      "featured": false,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Devin Price — Professional Portrait",
+      "bio": "Head coach and athletic director who returns each year to lead the Academy's team-building session.",
+      "story": [
+        "A three-sport athlete during his Academy years, Devin Price now leads an athletic program of his own. He returns each spring to run the Academy's team-building session, translating locker-room leadership lessons into language current Beaux immediately understand."
+      ],
+      "advice": "The team that trusts each other beats the team that's just more talented.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Terrence Coleman",
+      "slug": "terrence-coleman",
+      "class_year": "2010",
+      "theme": "Crème de la Crème",
+      "current_position": "High School Principal",
+      "employer": "Add School Name",
+      "college": "Morgan State University",
+      "grad_school": "",
+      "industry": "education",
+      "featured": false,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Terrence Coleman — Professional Portrait",
+      "bio": "High school principal and published co-author on youth mentorship, now shaping the next generation of students.",
+      "story": [
+        "Terrence Coleman became a teacher because an Academy mentor once told him the classroom was the fastest way to change a whole community at once. He's now a principal, and he keeps a standing invitation open for his former Academy mentors to speak to his students."
+      ],
+      "advice": "Find the room where you can help the most people at once, and go stand in it.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Andre Whitfield",
+      "slug": "andre-whitfield",
+      "class_year": "2021",
+      "theme": "Phoenix Rising",
+      "current_position": "Founder & CEO",
+      "employer": "Add Company Name",
+      "college": "Clark Atlanta University",
+      "grad_school": "",
+      "industry": "business",
+      "featured": false,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Andre Whitfield — Professional Portrait",
+      "bio": "Founder and CEO who launched his company shortly after college, now hiring from the same community that raised him.",
+      "story": [
+        "Andre Whitfield started his first small business while still enrolled in the Academy, using a leadership-session assignment as the spark for what eventually became a full company. He now makes a point of hiring interns from his old neighborhood whenever he can."
+      ],
+      "advice": "Start before you feel ready — the Academy will not be the last place that asks you to.",
+      "gallery": [],
+      "related_news": ["whitfield-business-expands"]
+    },
+    {
+      "name": "Christopher Boyd",
+      "slug": "christopher-boyd",
+      "class_year": "2011",
+      "theme": "A Few Good Men",
+      "current_position": "Photographer",
+      "employer": "Add Studio Name",
+      "college": "Savannah College of Art and Design",
+      "grad_school": "",
+      "industry": "arts",
+      "featured": false,
+      "volunteer_status": "Occasional Volunteer",
+      "photo": "",
+      "photo_label": "Christopher Boyd — Professional Portrait",
+      "bio": "Award-winning photographer who returns to document each year's gala and ceremony.",
+      "story": [
+        "Christopher Boyd picked up a camera during his Academy years to document a community-service project and never put it down. He's now a professional photographer and has returned several times to shoot the Academy's own gala."
+      ],
+      "advice": "Document the work you're proud of. You'll need the proof of who you were becoming.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Brandon Hayes",
+      "slug": "brandon-hayes",
+      "class_year": "2017",
+      "theme": "Young, Black & Gifted",
+      "current_position": "Civil Engineer",
+      "employer": "Add Firm Name",
+      "college": "North Carolina A&T State University",
+      "grad_school": "North Carolina State University (M.S. Civil Engineering)",
+      "industry": "engineering",
+      "featured": false,
+      "volunteer_status": "Occasional Volunteer",
+      "photo": "",
+      "photo_label": "Brandon Hayes — Professional Portrait",
+      "bio": "Civil engineer working on infrastructure projects in the communities the Academy serves.",
+      "story": [
+        "Brandon Hayes traces his interest in engineering to a leadership session on community infrastructure. He's now a licensed civil engineer working on public projects, several of them in the same neighborhoods he grew up in."
+      ],
+      "advice": "The things you build should outlast you. Choose a field where that's true.",
+      "gallery": [],
+      "related_news": []
+    },
+    {
+      "name": "Elijah Carter",
+      "slug": "elijah-carter",
+      "class_year": "2015",
+      "theme": "Heirs to the Throne",
+      "current_position": "Foreign Service Officer",
+      "employer": "Add Agency/Post Name",
+      "college": "American University",
+      "grad_school": "",
+      "industry": "public-service",
+      "featured": false,
+      "volunteer_status": "Occasional Volunteer",
+      "photo": "",
+      "photo_label": "Elijah Carter — Professional Portrait",
+      "bio": "Foreign Service officer and Fulbright Scholar who now represents the United States abroad.",
+      "story": [
+        "Elijah Carter says the Academy's public-speaking sessions were the first place he learned to represent something bigger than himself in front of a room. That skill carried him through a Fulbright fellowship abroad and into a career representing the United States overseas."
+      ],
+      "advice": "Learn to represent something larger than yourself early. You'll be asked to do it your whole career.",
+      "gallery": [],
+      "related_news": ["carter-fulbright"]
+    },
+    {
+      "name": "Robert Sims",
+      "slug": "robert-sims",
+      "class_year": "2009",
+      "theme": "The Year of the Gentleman",
+      "current_position": "Municipal Court Judge",
+      "employer": "Add Court/Jurisdiction Name",
+      "college": "Rutgers University",
+      "grad_school": "Rutgers Law School",
+      "industry": "law",
+      "featured": false,
+      "volunteer_status": "Active Mentor",
+      "photo": "",
+      "photo_label": "Robert Sims — Professional Portrait",
+      "bio": "Municipal court judge and one of the Academy's earliest graduates to reach the bench.",
+      "story": [
+        "Robert Sims was part of the Academy's very first classes, long before the program had an alumni network to speak of. Decades later, he was appointed to the municipal bench — a full-circle moment he shared with the current class at that year's gala."
+      ],
+      "advice": "Someone has to be the first example. Let it be you.",
+      "gallery": [],
+      "related_news": ["sims-judge"]
+    }
+  ],
+
+  "milestones": [
+    { "icon": "🎓", "label": "College Graduation", "alumni_slug": "marcus-johnson", "note": "Howard University, cum laude" },
+    { "icon": "⚖️", "label": "Law School", "alumni_slug": "marcus-johnson", "note": "Georgetown University Law Center" },
+    { "icon": "🩺", "label": "Medical School", "alumni_slug": "jordan-wells", "note": "Meharry Medical College" },
+    { "icon": "🎖", "label": "Military Commission", "alumni_slug": "isaiah-reed", "note": "Commissioned Ensign, U.S. Navy" },
+    { "icon": "📈", "label": "Promotion", "alumni_slug": "devin-price", "note": "Named Head Coach & Athletic Director" },
+    { "icon": "💼", "label": "Entrepreneurship", "alumni_slug": "andre-whitfield", "note": "Founded his own company" },
+    { "icon": "🏆", "label": "Community Award", "alumni_slug": "xavier-brooks", "note": "Recognized for community leadership" },
+    { "icon": "✍️", "label": "Published Author", "alumni_slug": "terrence-coleman", "note": "Co-authored a book on youth mentorship" },
+    { "icon": "🏛", "label": "Board Service", "alumni_slug": "xavier-brooks", "note": "Appointed to a nonprofit board" },
+    { "icon": "👨‍👩‍👧", "label": "Family", "alumni_slug": "christopher-boyd", "note": "Welcomed his first child" },
+    { "icon": "👔", "label": "Leadership Position", "alumni_slug": "malik-anderson", "note": "Promoted to engineering team lead" },
+    { "icon": "🎓", "label": "Graduate School", "alumni_slug": "brandon-hayes", "note": "M.S. in Civil Engineering, NC State" }
+  ],
+
+  "news": [
+    {
+      "slug": "marcus-johnson-partner",
+      "headline": "Alumnus Named Partner at Law Firm",
+      "summary": "Marcus Johnson (Class of 2015) has been named partner, becoming one of the Academy's youngest alumni to reach the position.",
+      "date": "2025-09-01",
+      "alumni_slug": "marcus-johnson",
+      "image": ""
+    },
+    {
+      "slug": "jordan-wells-practice",
+      "headline": "Former Participant Opens Medical Practice",
+      "summary": "Dr. Jordan Wells (Class of 2011) has opened a family medicine practice in the same community that raised him.",
+      "date": "2025-06-12",
+      "alumni_slug": "jordan-wells",
+      "image": ""
+    },
+    {
+      "slug": "carter-fulbright",
+      "headline": "Academy Graduate Receives Fulbright Scholarship",
+      "summary": "Elijah Carter (Class of 2015) was named a Fulbright Scholar before beginning his career in the Foreign Service.",
+      "date": "2025-03-20",
+      "alumni_slug": "elijah-carter",
+      "image": ""
+    },
+    {
+      "slug": "whitfield-business-expands",
+      "headline": "Local Business Founded by Academy Alumnus Expands",
+      "summary": "The company founded by Andre Whitfield (Class of 2021) has expanded to a second location, with plans to hire from the local community.",
+      "date": "2025-01-15",
+      "alumni_slug": "andre-whitfield",
+      "image": ""
+    },
+    {
+      "slug": "sims-judge",
+      "headline": "Alumnus Appointed Judge",
+      "summary": "Robert Sims (Class of 2009), one of the Academy's earliest graduates, has been appointed to the municipal bench.",
+      "date": "2024-11-08",
+      "alumni_slug": "robert-sims",
       "image": ""
     }
+  ],
+
+  "quotes": [
+    { "quote": "The Academy challenged me to think bigger than I ever imagined.", "attribution": "Class of 2015" },
+    { "quote": "Leadership begins with listening.", "attribution": "Class of 2011" },
+    { "quote": "Don't be afraid to leave your comfort zone.", "attribution": "Class of 2017" },
+    { "quote": "My closest friendships began here.", "attribution": "Class of 2019" },
+    { "quote": "Take advantage of every opportunity.", "attribution": "Class of 2009" }
   ]
 }
