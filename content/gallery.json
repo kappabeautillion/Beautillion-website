@@ -1,10 +1,16 @@
 {
   "photos": [
     {
-      "caption": "2025 Presentation Ceremony",
+      "caption": "2019 Step Performance",
       "category": "ceremony",
-      "label": "Ceremony Photo",
-      "image": ""
+      "label": "Step Performance Photo",
+      "image": "/assets/img/gallery/2019-step-performance.jpg"
+    },
+    {
+      "caption": "2019 Gala Formal Portraits",
+      "category": "ceremony",
+      "label": "Formal Portrait Photo",
+      "image": "/assets/img/gallery/2019-formal-portraits.jpg"
     },
     {
       "caption": "Orientation Weekend",
@@ -43,10 +49,10 @@
       "image": ""
     },
     {
-      "caption": "Class Group Portrait",
+      "caption": "Class of 2019 Group Portrait",
       "category": "ceremony",
       "label": "Group Portrait",
-      "image": ""
+      "image": "/assets/img/gallery/2019-class-portrait.jpg"
     },
     {
       "caption": "Neighborhood Cleanup",

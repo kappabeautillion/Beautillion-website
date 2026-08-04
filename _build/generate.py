@@ -196,7 +196,7 @@ def render_class_page(cls):
     accent = THEME_ACCENTS.get(cls.get("style"), "var(--burgundy)")
     hero = f"""
   <section class="hero hero--page class-hero" style="--theme-accent:{accent}; min-height:80vh;">
-    <div class="hero-media"><div class="ph-photo"><span>Class of {cls['year']} Panoramic Class Photograph — All Participants in Tuxedos</span></div></div>
+    <div class="hero-media">{media(cls.get("hero_photo"), f"Class of {cls['year']} Panoramic Class Photograph — All Participants in Tuxedos", f"Class of {cls['year']} Beaux group portrait")}</div>
     <div class="container">
       <div class="hero-content" data-reveal>
         <span class="eyebrow">Class of {cls['year']}</span>
@@ -436,7 +436,7 @@ def render_beaux_hub():
     for cls in classes_data:
         cards_html += f"""
         <div class="legacy-card" data-reveal>
-          <div class="lc-media"><div class="ph-photo"><span>Class of {cls['year']} — Class Portrait</span></div></div>
+          <div class="lc-media">{media(cls.get("hub_photo"), f"Class of {cls['year']} — Class Portrait", f"Class of {cls['year']} Beaux group portrait")}</div>
           <div class="lc-body">
             <span class="lc-year">{cls['year']}</span>
             <h3 class="lc-theme">{esc(cls['theme'])}</h3>

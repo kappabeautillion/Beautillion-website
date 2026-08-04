@@ -575,6 +575,7 @@ h1.display { font-size: clamp(2.6rem, 6vw, 5rem); }
 
 /* Legacy full-width banner */
 .legacy-banner .ph-photo { aspect-ratio: 21 / 9; min-height: 320px; }
+.legacy-banner img { width: 100%; height: 100%; aspect-ratio: 21 / 9; min-height: 320px; object-fit: cover; display: block; }
 
 /* Final quote — black background, gold serif text */
 .story-final-quote p {
@@ -725,6 +726,7 @@ h1.display { font-size: clamp(2.6rem, 6vw, 5rem); }
 .legacy-card { background: var(--white); border: 1px solid var(--gray-100); overflow: hidden; transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); display: flex; flex-direction: column; }
 .legacy-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(10,10,10,0.12); }
 .legacy-card .lc-media .ph-photo { aspect-ratio: 4/3; }
+.legacy-card .lc-media img { width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
 .legacy-card .lc-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
 .legacy-card .lc-year { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--burgundy); line-height: 1; }
 .legacy-card .lc-theme { font-size: 1.05rem; font-weight: 700; margin: 6px 0 10px; }
