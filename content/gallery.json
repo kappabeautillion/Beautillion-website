@@ -16,7 +16,7 @@
       "caption": "Orientation Weekend",
       "category": "program",
       "label": "Orientation Photo",
-      "image": ""
+      "image": "/assets/img/gallery/orientation-weekend.jpg"
     },
     {
       "caption": "Community Service Day",
@@ -28,7 +28,7 @@
       "caption": "Etiquette Dinner",
       "category": "program",
       "label": "Etiquette Dinner Photo",
-      "image": ""
+      "image": "/assets/img/gallery/etiquette-dinner.jpg"
     },
     {
       "caption": "Sponsor Appreciation Reception",
@@ -40,7 +40,7 @@
       "caption": "Rehearsal Night",
       "category": "ceremony",
       "label": "Rehearsal Photo",
-      "image": ""
+      "image": "/assets/img/gallery/rehearsal-night.jpg"
     },
     {
       "caption": "Financial Literacy Workshop",

@@ -653,6 +653,7 @@ h1.display { font-size: clamp(2.6rem, 6vw, 5rem); }
   .experience-row.reverse .experience-copy { order: 1; }
 }
 .experience-media .ph-photo { aspect-ratio: 4/3; }
+.experience-media img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
 .experience-copy .eyebrow { color: var(--gold); }
 .experience-copy .eyebrow::before { background: var(--gold); }
 

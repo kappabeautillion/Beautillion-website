@@ -6,7 +6,56 @@
       "theme": "The Year of the Gentleman",
       "quote": "Where a tradition of leadership and character began.",
       "style": "classic",
-      "full_page": false
+      "full_page": false,
+      "hero_photo": "/assets/img/beaux/classes/2009/hero.jpg",
+      "hub_photo": "/assets/img/beaux/classes/2009/card.jpg",
+      "participants": [
+        {
+          "name": "Jibril Barbee",
+          "slug": "jibril-barbee",
+          "photo": "/assets/img/beaux/profiles/2009/jibril-barbee.webp",
+          "card_photo": "/assets/img/beaux/cards/2009/jibril-barbee.webp",
+          "original_photo": "/assets/img/beaux/originals/2009/jibril-barbee.jpg",
+          "alt": "Professional headshot of Jibril Barbee, Beautillion Leadership Academy Class of 2009.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Miles Hinson",
+          "slug": "miles-hinson",
+          "photo": "/assets/img/beaux/profiles/2009/miles-hinson.webp",
+          "card_photo": "/assets/img/beaux/cards/2009/miles-hinson.webp",
+          "original_photo": "/assets/img/beaux/originals/2009/miles-hinson.jpg",
+          "alt": "Professional headshot of Miles Hinson, Beautillion Leadership Academy Class of 2009.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Robert Ransom",
+          "slug": "robert-ransom",
+          "photo": "/assets/img/beaux/profiles/2009/robert-ransom.webp",
+          "card_photo": "/assets/img/beaux/cards/2009/robert-ransom.webp",
+          "original_photo": "/assets/img/beaux/originals/2009/robert-ransom.jpg",
+          "alt": "Professional headshot of Robert Ransom, Beautillion Leadership Academy Class of 2009.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Charles Watkins",
+          "slug": "charles-watkins",
+          "photo": "/assets/img/beaux/profiles/2009/charles-watkins.webp",
+          "card_photo": "/assets/img/beaux/cards/2009/charles-watkins.webp",
+          "original_photo": "/assets/img/beaux/originals/2009/charles-watkins.jpg",
+          "alt": "Professional headshot of Charles Watkins, Beautillion Leadership Academy Class of 2009.",
+          "profile_type": "photo_only"
+        },
+        {
+          "name": "Parker Watson",
+          "slug": "parker-watson",
+          "photo": "/assets/img/beaux/profiles/2009/parker-watson.webp",
+          "card_photo": "/assets/img/beaux/cards/2009/parker-watson.webp",
+          "original_photo": "/assets/img/beaux/originals/2009/parker-watson.jpg",
+          "alt": "Professional headshot of Parker Watson, Beautillion Leadership Academy Class of 2009.",
+          "profile_type": "photo_only"
+        }
+      ]
     },
     {
       "year": "2010",
